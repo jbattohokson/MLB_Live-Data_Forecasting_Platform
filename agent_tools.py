@@ -238,11 +238,15 @@ def tool_get_pitcher_statcast(args: dict) -> str:
             vals  = df["estimated_woba_using_speedangle"].dropna()
             xwoba = round(float(vals.mean()), 3) if not vals.empty else None
 
-        # Barrel rate
+        # Barrel rate — pitch-level statcast_pitcher() has no "barrel" column at all
+        # (confirmed by inspection during testing on 2026-09-16; that column only
+        # exists on the leaderboard endpoints). The real per-pitch signal is
+        # `launch_speed_angle`, Statcast's 1-6 batted-ball quality code, where
+        # 6 = "Barrel". Rate is barrels / batted-ball events, not barrels / all pitches.
         barrel_rate = None
-        if "barrel" in df.columns:
-            barrels     = df["barrel"].dropna()
-            barrel_rate = round(float(barrels.mean()) * 100, 1) if not barrels.empty else None
+        if "launch_speed_angle" in df.columns:
+            bbe = df["launch_speed_angle"].dropna()
+            barrel_rate = round((bbe == 6).sum() / len(bbe) * 100, 1) if not bbe.empty else None
 
         # Sweet spot % (8–32° launch angle)
         sweet_spot_pct = None
@@ -306,30 +310,32 @@ def tool_get_il_stints(args: dict) -> str:
         return json.dumps({"text": f"ERROR: Unknown team '{team_abbr}'. Valid options: {sorted(MLB_TEAM_IDS.keys())}"})
 
     try:
-        import mlbstatsapi  # type: ignore[import-untyped]
-        mlb       = mlbstatsapi.Mlb()
+        # `mlbstatsapi` (used here previously) is not an installable PyPI package —
+        # confirmed 404 on PyPI during testing on 2026-09-16, so this tool crashed
+        # with "No module named 'mlbstatsapi'" on every call in any fresh
+        # environment. `statsapi` (pip package `MLB-StatsAPI`, already a hard
+        # dependency of pipeline/fetch_injuries.py) provides the same transactions
+        # endpoint and is what's actually installed.
+        import statsapi  # type: ignore[import-untyped]
         team_id   = MLB_TEAM_IDS[team_abbr]
         start_str = f"{season}-01-01"
         end_str   = f"{season}-12-31"
 
-        try:
-            raw = mlb.get_team_transactions(team_id, start_date=start_str, end_date=end_str)
-        except Exception:
-            raw = mlb.get_transactions(team_id=team_id, start_date=start_str, end_date=end_str)
+        result = statsapi.get(
+            "transactions",
+            {"teamId": team_id, "startDate": start_str, "endDate": end_str},
+        )
+        raw = result.get("transactions", []) if isinstance(result, dict) else []
 
         stints = []
-        for txn in (raw if isinstance(raw, list) else getattr(raw, "transactions", [])):
-            desc = getattr(txn, "description", "") or ""
+        for txn in raw:
+            desc = txn.get("description", "") or ""
             if "injured list" not in desc.lower() and " IL" not in desc:
                 continue
-            player_obj  = getattr(txn, "person", None)
-            player_name = (
-                getattr(player_obj, "full_name", None)
-                or getattr(player_obj, "fullName", "Unknown")
-                if player_obj else "Unknown"
-            )
-            date_str   = getattr(txn, "date", "")
-            type_label = getattr(txn, "type_desc", "") or getattr(txn, "typeDesc", "IL")
+            person      = txn.get("person") or {}
+            player_name = person.get("fullName", "Unknown")
+            date_str    = txn.get("date", "")
+            type_label  = txn.get("typeDesc", "IL")
             stints.append({
                 "player_name": player_name,
                 "date":        date_str,
@@ -428,31 +434,25 @@ def tool_get_schedule(args: dict) -> str:
         return json.dumps({"text": f"Unknown team '{team_abbr}'."})
 
     try:
-        import mlbstatsapi  # type: ignore[import-untyped]
-        mlb     = mlbstatsapi.Mlb()
+        # Same fictitious-package issue as tool_get_il_stints: `mlbstatsapi` isn't
+        # a real PyPI package (confirmed 404). `statsapi` (MLB-StatsAPI) exposes a
+        # much simpler `schedule()` helper that returns plain dicts directly —
+        # no need to walk a nested object graph.
+        import statsapi  # type: ignore[import-untyped]
         team_id = MLB_TEAM_IDS[team_abbr]
 
-        schedule = mlb.get_schedule(
-            start_date=start_date, end_date=end_date,
-            sport_id=1, team_id=team_id,
-        )
+        raw_games = statsapi.schedule(start_date=start_date, end_date=end_date, team=team_id)
 
         games = []
-        for date_obj in (getattr(schedule, "dates", []) or []):
-            for game in (getattr(date_obj, "games", []) or []):
-                home_team = getattr(getattr(getattr(game, "teams", None), "home", None), "team", None)
-                away_team = getattr(getattr(getattr(game, "teams", None), "away", None), "team", None)
-                home_name = getattr(home_team, "name", "?") if home_team else "?"
-                away_name = getattr(away_team, "name", "?") if away_team else "?"
-                game_date = getattr(date_obj, "date", "?")
-                is_home   = team_id == getattr(home_team, "id", -1) if home_team else False
-                opponent  = away_name if is_home else home_name
-                games.append({
-                    "date":      game_date,
-                    "opponent":  opponent,
-                    "home_away": "HOME" if is_home else "AWAY",
-                    "game_pk":   getattr(game, "game_pk", None),
-                })
+        for g in raw_games:
+            is_home  = g.get("home_id") == team_id
+            opponent = g.get("away_name") if is_home else g.get("home_name")
+            games.append({
+                "date":      g.get("game_date", "?"),
+                "opponent":  opponent or "?",
+                "home_away": "HOME" if is_home else "AWAY",
+                "game_pk":   g.get("game_id"),
+            })
 
         if not games:
             return json.dumps({"text": f"No games found for {team_abbr} from {start_date} to {end_date}."})
@@ -509,10 +509,16 @@ FEATURE_MAP: dict[str, str] = {
     "xfip":               "xFIP",
     "babip":              "BABIP",
     "lob_pct":            "LOB%",
-    "barrel_pct":         "barrel_batted_rate",
-    "hard_hit_percent":   "hard_hit_percent",
-    "exit_velocity_avg":  "exit_velocity_avg",
-    "sweet_spot_percent": "sweet_spot_percent",
+    # Fixed 2026-09-16: statcast_pitcher_exitvelo_barrels() has none of the four
+    # column names this map originally pointed to — confirmed by inspecting its
+    # real columns during testing (['barrels', 'brl_percent', 'avg_hit_speed',
+    # 'ev95percent', 'anglesweetspotpercent', ...]). Silently mapped to columns
+    # that don't exist meant these four "features" always resolved to
+    # `missing_feats` and errored out the tool whenever requested.
+    "barrel_pct":         "brl_percent",
+    "hard_hit_percent":   "ev95percent",
+    "exit_velocity_avg":  "avg_hit_speed",
+    "sweet_spot_percent": "anglesweetspotpercent",
     "whiff_percent":      "whiff_percent",
 }
 
@@ -539,13 +545,50 @@ def tool_build_regression(args: dict) -> str:
         from sklearn.model_selection import cross_val_score      # type: ignore[import-untyped]
 
         pybaseball.cache.enable()
-        fg = pybaseball.pitching_stats(season, season, qual=30)
+        try:
+            fg = pybaseball.pitching_stats(season, season, qual=30)
+            if fg is None or fg.empty:
+                raise ValueError("FanGraphs pitching_stats returned empty")
+        except Exception:
+            # FanGraphs' legacy leaderboard reliably 403s from some networks —
+            # same fallback already used in pipeline/fetch_statcast.py. Baseball
+            # Reference doesn't provide FanGraphs' precomputed K%/BB%/FIP/xwOBA
+            # columns at all, so they're derived here from its raw counting
+            # stats (same FIP constant, 3.20, used in migrate_to_duckdb.py's
+            # fip_proxy) rather than left to silently resolve to nothing.
+            fg = pybaseball.pitching_stats_bref(season).rename(columns={"Tm": "Team"}).copy()
+            if {"BF", "SO", "BB"}.issubset(fg.columns):
+                fg["K%"]  = fg["SO"] / fg["BF"].replace(0, float("nan"))
+                fg["BB%"] = fg["BB"] / fg["BF"].replace(0, float("nan"))
+            if {"HR", "BB", "SO", "IP"}.issubset(fg.columns):
+                fg["FIP"] = (13.0 * fg["HR"] + 3.0 * fg["BB"] - 2.0 * fg["SO"]) / fg["IP"].replace(0, float("nan")) + 3.20
+            for col in ("xFIP", "LOB%", "BABIP", "xwOBA"):
+                if col not in fg.columns:
+                    fg[col] = float("nan")
 
         # Attempt to merge Statcast exit-velo / barrel data
         try:
-            sc = pybaseball.statcast_pitcher_exitvelo_barrels(season, minPA=50)
-            fg["_name_key"] = fg["Name"].str.lower().str.strip()
-            sc["_name_key"] = sc["player_name"].str.lower().str.strip()
+            # minBBE (not minPA — that kwarg doesn't exist on this function and
+            # silently threw, which the bare except below was swallowing) is
+            # the real parameter name; 'q' (qualified) is the pybaseball default.
+            sc = pybaseball.statcast_pitcher_exitvelo_barrels(season, minBBE=50)
+            if "player_name" not in sc.columns and "last_name, first_name" in sc.columns:
+                sc = sc.copy()
+                sc["player_name"] = sc["last_name, first_name"].astype(str)
+
+            def _name_key(name: str) -> str:
+                # Statcast leaderboards return "Last, First"; FanGraphs/bref return
+                # "First Last" — without swapping, every key mismatched (confirmed
+                # during testing: 0/578 overlap despite both frames having valid
+                # names) and the Statcast merge silently contributed nothing.
+                name = str(name).strip()
+                if "," in name:
+                    last, first = [p.strip() for p in name.split(",", 1)]
+                    return f"{first} {last}".lower()
+                return name.lower()
+
+            fg["_name_key"] = fg["Name"].map(_name_key)
+            sc["_name_key"] = sc["player_name"].map(_name_key)
             merged = fg.merge(sc, on="_name_key", how="left")
         except Exception:
             merged = fg.copy()

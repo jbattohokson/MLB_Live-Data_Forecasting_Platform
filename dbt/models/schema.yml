@@ -1,0 +1,63 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: main
+    tables:
+      - name: raw_pitchers
+        description: "Pitcher-season Statcast data loaded from Pitchers_Stats.csv with type casts and derived columns."
+      - name: raw_batters
+        description: "Batter-season Statcast data loaded from Batters_Stats.csv with type casts and derived columns."
+
+models:
+  - name: stg_pitchers
+    description: "Staged pitcher profiles exposing all pre-computed metrics from raw_pitchers."
+    columns:
+      - name: player_id
+        description: "MLBAM player identifier."
+        data_tests: [not_null]
+      - name: season
+        description: "Season year."
+        data_tests: [not_null]
+      - name: p_era
+        description: "Earned run average. Note: can exceed 15 in small samples."
+        data_tests: [not_null]
+      - name: xwoba
+        description: "Expected weighted on-base average against (0.0–1.0 typical range)."
+        data_tests: [not_null]
+      - name: whiff_tier
+        description: "Categorical whiff quality: Elite (>=30%), Average (>=24%), Below Average."
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["Elite", "Average", "Below Average"]
+
+  - name: stg_batters
+    description: "Staged batter profiles exposing all pre-computed metrics from raw_batters."
+    columns:
+      - name: player_id
+        description: "MLBAM player identifier."
+        data_tests: [not_null]
+      - name: season
+        description: "Season year."
+        data_tests: [not_null]
+      - name: iso
+        description: "Isolated power (slugging minus batting average)."
+        data_tests: [not_null]
+      - name: contact_quality_score
+        description: "0-1 composite of barrel rate, sweet spot %, and exit velocity (min-max normalized)."
+        data_tests: [not_null]
+
+  - name: mart_pitcher_profiles
+    description: "Final pitcher analytical mart with ERA regression flag."
+    columns:
+      - name: player_id
+        data_tests: [not_null]
+      - name: era_regression_flag
+        description: "1 when ERA > xwOBA + 0.50, indicating ERA is likely to regress down."
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [0, 1]

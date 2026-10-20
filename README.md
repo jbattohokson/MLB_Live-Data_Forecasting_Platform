@@ -1,129 +1,38 @@
 # MLB Live Agent
 
-A Streamlit web application powered by a Claude agentic loop for MLB pitching analysis. Ask natural-language questions about any pitcher or team — the agent pulls live Statcast data, tracks injury history, runs Ridge regression, and renders interactive Plotly charts directly in the chat interface.
+A Streamlit app where a coach or analyst asks pitching questions in plain English ("how has Player X's fastball velocity trended over his last five starts, and is that a fatigue signal?") and a Claude-powered agent pulls live Statcast and injury data, runs the analysis, and renders the answer as an interactive Plotly chart.
 
-> **Status:** Active development. Core agent loop, all 7 tools, dbt analytics layer, and live pipeline are functional. Additional chart types and batter-side tooling in progress.
-
----
-
-## What It Does
-
-Traditional scouting workflows rely on static reports that can't respond to ad-hoc questions or surface regression signals in real time. This agent replaces that workflow with a conversational interface backed by live data.
-
-Example queries:
-- "What's Zack Wheeler's pitch mix and xwOBA allowed this season?"
-- "Show me the Dodgers' IL history for 2024."
-- "Build a regression model predicting ERA from whiff rate and barrel rate."
-- "Plot Corbin Burnes' fastball velocity trend over the last 30 days."
-- "Which Phillies pitchers are showing velocity decline this month?"
-
----
+**Business question this answers:** can a natural-language interface over live sports data shorten the time between "I have a question" and "I have a chart" for a non-technical end user (a coach), instead of requiring them to file a request with an analyst?
 
 ## Architecture
 
-```
-MLB_Live_Agent.py          Streamlit entry point. Owns page layout, sidebar controls,
-                           chat UI, and the Claude agentic loop. Dispatches tool calls,
-                           converts chart payloads into Plotly figures, renders them
-                           in a 2-column grid above chat history.
+- **`MLB_Live_Agent.py`** — Streamlit entry point: page layout, sidebar controls, chat UI, and the agent loop (send question, parse Claude's tool calls, dispatch them, render results).
+- **`agent_tools.py`** — the seven tools Claude can call: live Statcast pitch metrics, IL stints, velocity trends, schedules, semantic search over pitcher profiles (ChromaDB), a Ridge regression model predicting ERA/xwOBA from Statcast features, and pitch-location heatmap data.
+- **`pipeline/`** — the live data refresh pipeline (`run_pipeline.py` orchestrates `fetch_statcast.py`, `fetch_injuries.py`, `combine.py`), with offseason guards and staleness TTLs so it doesn't re-fetch unnecessarily. Runs on a schedule via `.github/workflows/refresh_data.yml`.
+- **`migrate_to_duckdb.py`** + **`dbt/`** — the historical analytics layer: seeds DuckDB from season-level stats CSVs, then dbt staging and mart models compute FIP proxies, whiff tiers, and normalized contact-quality scores. This layer is separate from the live agent loop, which queries pybaseball/MLB Stats API directly at question time.
 
-agent_tools.py             All 7 tool functions, Plotly chart builders, ChromaDB helper,
-                           tool registry (TOOLS + TOOL_SCHEMAS), and system prompt.
-                           Each tool returns a JSON string with a "text" field Claude
-                           reads and optional chart_type / chart_data fields the
-                           Streamlit layer renders. Errors stay inside JSON so Claude
-                           can self-correct and retry without crashing.
-
-pipeline/                  Live data pipeline keeping data/live/ fresh.
-  run_pipeline.py          Entrypoint. Supports full, injuries_only, statcast_only modes.
-                           Applies TTL staleness checks (Statcast: 6h, injuries: 1h)
-                           and offseason guards (skips Statcast Nov-Feb).
-  fetch_statcast.py        Pulls pitcher and batter Statcast data from Baseball Savant
-                           via pybaseball. Writes to data/live/pitchers_statcast.csv.
-  fetch_injuries.py        Scrapes pitcher IL reports from ESPN, Rotowire, and Yahoo.
-                           Caches raw HTML by source and date. Writes deduped results
-                           to data/live/pitcher_injuries.csv.
-  combine.py               Merges Statcast and injury CSVs using rapidfuzz for fuzzy
-                           name matching across data providers.
-
-migrate_to_duckdb.py       Seeds mlb_analytics.duckdb from historical CSVs. Applies
-                           SQL transforms: FIP proxy, whiff tier, normalized contact
-                           quality score. Run before dbt build.
-
-dbt/                       Historical analytics layer inside mlb_analytics.duckdb.
-  staging/stg_pitchers     Cleans raw_pitchers, exposes ERA, xwOBA, whiff_tier, FIP.
-  staging/stg_batters      Cleans raw_batters, exposes ISO, contact_quality_score.
-  marts/mart_pitcher_profiles  Per-pitcher profile rows with era_regression_flag
-                           (1 when ERA materially exceeds FIP — likely regression).
-
-.github/workflows/
-  refresh_data.yml         GitHub Actions workflow. Runs every Sunday at 6 AM UTC.
-                           Seeds DuckDB, runs dbt build, prints row-count summary,
-                           runs dbt test. Keeps the analytics layer current without
-                           manual intervention.
-```
-
----
-
-## Agent Tools
-
-| Tool | Data Source | What It Does |
-|---|---|---|
-| `get_pitcher_statcast` | Baseball Savant / pybaseball | Pitch mix, velocity, xwOBA, barrel rate, whiff rate |
-| `get_il_stints` | MLB Stats API | IL placements for any team and season |
-| `get_pitch_velocity_trend` | Baseball Savant | Game-by-game fastball velocity for fatigue/injury detection |
-| `get_schedule` | MLB Stats API | Upcoming games and opponents for any team |
-| `search_pitcher_profile` | ChromaDB | Semantic search over pitcher summaries |
-| `build_regression_model` | pybaseball + scikit-learn | Ridge regression predicting ERA or xwOBA from Statcast features |
-| `get_pitch_heatmap_data` | Baseball Savant | Pitch location and movement for heatmaps and 3D plots |
-
----
-
-## Stack
-
-- **Languages:** Python 3.13
-- **UI:** Streamlit
-- **Agent:** Anthropic Claude API (tool use + prompt caching)
-- **Live data:** pybaseball, mlbstatsapi
-- **Analytics DB:** DuckDB + dbt
-- **Vector store:** ChromaDB + sentence-transformers
-- **Modeling:** scikit-learn (Ridge regression)
-- **Visualization:** Plotly
-- **Pipeline:** GitHub Actions (weekly refresh)
-- **Other:** rapidfuzz, beautifulsoup4, pandas, NumPy
-
----
-
-## Setup & Execution
+See [`PROJECT_STRUCTURE.md`](PROJECT_STRUCTURE.md) for a file-by-file breakdown, plus a full record of what was tested and fixed on 2026-09-16.
 
 ```bash
-# Install dependencies
 pip install -r requirements.txt
-
-# Set API key
 export ANTHROPIC_API_KEY=sk-ant-...
-
-# Seed the analytics database (run once, then automated via GitHub Actions)
-python migrate_to_duckdb.py
-dbt build --project-dir dbt --profiles-dir dbt
-
-# Run the live data pipeline
-python pipeline/run_pipeline.py --mode full
-
-# Launch the app
 streamlit run MLB_Live_Agent.py
 ```
 
-> **Python version:** Requires Python 3.13.x. chromadb and sentence-transformers do not ship binary wheels for Python 3.14+.
+## Tools
 
----
+Python, Streamlit, DuckDB, dbt, ChromaDB, Anthropic Claude API (agentic tool use), Plotly, scikit-learn, pybaseball, MLB Stats API, GitHub Actions.
 
-## Data Layers
+## Testing status (2026-09-16)
 
-The agent separates live and historical data intentionally:
+Every tool function and pipeline stage was actually run against live data — 3x each for reliability, not just read through. This surfaced and fixed real bugs, not cosmetic ones: a crash in the Statcast merge that meant the full pipeline could never complete successfully, an always-null xwOBA/hard-hit-rate field caused by reading the wrong column names, non-pitchers polluting the injury feed, and two of the seven agent tools (`get_il_stints`, `get_schedule`) that were 100% broken because they imported a Python package that doesn't exist on PyPI. Full details, including exact before/after numbers, are in [`PROJECT_STRUCTURE.md`](PROJECT_STRUCTURE.md#testing-status-2026-09-16).
 
-**Live layer** (`data/live/`) — refreshed by the pipeline on demand. Used by the agent at query time for current-season Statcast stats and injury reports.
+Two things couldn't be tested end-to-end in this environment and are documented rather than assumed: `migrate_to_duckdb.py` (the source CSVs aren't present in this copy of the repo — the dbt layer was still verified against the already-built database) and the live Claude chat loop itself (no `ANTHROPIC_API_KEY` available here — the seven underlying tool functions it calls were fully tested instead).
 
-**Historical layer** (`mlb_analytics.duckdb`) — seeded from `Datasets/` CSVs and transformed by dbt. Used for multi-season trend analysis and regression modeling. Not used by the live agent loop directly.
+## Live demo
 
-**Vector store** (ChromaDB) — pitcher summaries embedded at ingest time. Enables semantic search for profile-style questions that don't map cleanly to structured queries.
+*(This is the single highest-leverage thing to finish before applications: deploy to Streamlit Community Cloud — free — and put the live URL here and at the top of the resume bullet. A working link beats a GitHub README every time a recruiter has 30 seconds.)*
+
+## Repo hygiene note
+
+`mlb_analytics.duckdb`, `data/live/`, `data/cache/`, and `__pycache__/` are excluded from this repo via `.gitignore` — they're build/runtime artifacts, not source. `migrate_to_duckdb.py` regenerates the database from the raw CSVs, and `pipeline/run_pipeline.py` regenerates the live data, so nothing is lost by not committing them.

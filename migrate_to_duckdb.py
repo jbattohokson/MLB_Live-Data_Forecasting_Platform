@@ -6,8 +6,8 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
 ROOT         = Path(__file__).resolve().parent
 DB_PATH      = ROOT / "mlb_analytics.duckdb"
-PITCHERS_CSV = ROOT / "Datasets" / "Pitchers_Stats.csv"
-BATTERS_CSV  = ROOT / "Datasets" / "Batters_Stats.csv"
+PITCHERS_CSV = ROOT / "data" / "Pitchers_Stats.csv"
+BATTERS_CSV  = ROOT / "data" / "Batters_Stats.csv"
 
 
 def migrate_data() -> None:

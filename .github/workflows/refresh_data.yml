@@ -1,0 +1,48 @@
+name: Weekly MLB Data Refresh
+
+on:
+  schedule:
+    - cron: "0 6 * * 0"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Seed DuckDB from CSVs
+        run: python migrate_to_duckdb.py
+
+      - name: Run dbt build
+        run: dbt build --project-dir dbt --profiles-dir dbt
+
+      - name: Row count summary
+        run: |
+          python - <<'EOF'
+          import duckdb
+          con = duckdb.connect("mlb_analytics.duckdb")
+          for tbl in ["raw_pitchers", "raw_batters", "stg_pitchers", "stg_batters", "mart_pitcher_profiles"]:
+              try:
+                  n = con.execute(f"SELECT COUNT(*) FROM {tbl}").fetchone()[0]
+                  print(f"{tbl}: {n} rows")
+              except Exception as e:
+                  print(f"{tbl}: ERROR - {e}")
+          EOF
+
+      - name: Run dbt tests
+        run: dbt test --project-dir dbt --profiles-dir dbt

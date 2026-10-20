@@ -1,0 +1,7 @@
+mlb_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('DBT_DB_PATH', 'mlb_analytics.duckdb') }}"
+      threads: 4
