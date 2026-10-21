@@ -557,6 +557,15 @@ def tool_build_regression(args: dict) -> str:
             # stats (same FIP constant, 3.20, used in migrate_to_duckdb.py's
             # fip_proxy) rather than left to silently resolve to nothing.
             fg = pybaseball.pitching_stats_bref(season).rename(columns={"Tm": "Team"}).copy()
+            # AUDITED 2026-10-21: Baseball Reference writes innings as 180.2 = 180 2/3, and
+            # has no qualifier, so the fallback used raw "IP" in FIP and kept 1-inning
+            # pitchers, while the output still said "min 30 IP". Convert and filter here.
+            if "IP" in fg.columns:
+                ip = pd.to_numeric(fg["IP"], errors="coerce")
+                fg["IP"] = ip.floordiv(1) + (ip.mod(1) * 10).round() / 3
+                fg = fg[fg["IP"] >= 30].copy()
+            if "ERA" in fg.columns:
+                fg["ERA"] = pd.to_numeric(fg["ERA"], errors="coerce")
             if {"BF", "SO", "BB"}.issubset(fg.columns):
                 fg["K%"]  = fg["SO"] / fg["BF"].replace(0, float("nan"))
                 fg["BB%"] = fg["BB"] / fg["BF"].replace(0, float("nan"))
@@ -636,6 +645,10 @@ def tool_build_regression(args: dict) -> str:
 
         X        = df_model[feature_cols].values.astype(float)
         y        = df_model[target_col].values.astype(float)
+        # Scaler inside the pipeline so each CV fold scales on its own training split
+        # (it was fit on all rows before cross_val_score, leaking the test folds).
+        from sklearn.pipeline import make_pipeline              # type: ignore[import-untyped]
+        from sklearn.model_selection import KFold               # type: ignore[import-untyped]
         scaler   = StandardScaler()
         X_scaled = scaler.fit_transform(X)
         model    = Ridge(alpha=1.0)
@@ -645,8 +658,10 @@ def tool_build_regression(args: dict) -> str:
         # min(5, ...) caps at standard 5-fold CV.
         # max(2, ...) prevents sklearn from raising on cv=1.
         n_folds = min(5, max(2, len(df_model) // 3))
+        # Shuffled folds: the source is sorted (by ERA/IP), so unshuffled folds are biased
         cv_r2   = float(
-            cross_val_score(model, X_scaled, y, cv=n_folds, scoring="r2").mean()
+            cross_val_score(make_pipeline(StandardScaler(), Ridge(alpha=1.0)), X, y,
+                            cv=KFold(n_folds, shuffle=True, random_state=42), scoring="r2").mean()
         )
         preds = model.predict(X_scaled)
 

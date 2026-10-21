@@ -55,7 +55,7 @@ models:
       - name: player_id
         data_tests: [not_null]
       - name: era_regression_flag
-        description: "1 when ERA > xwOBA + 0.50, indicating ERA is likely to regress down."
+        description: "1 when ERA is at least 0.50 above the FIP proxy (20+ IP), indicating ERA is likely to regress down."
         data_tests:
           - not_null
           - accepted_values:

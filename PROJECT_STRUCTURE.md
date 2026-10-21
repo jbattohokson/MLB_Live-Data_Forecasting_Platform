@@ -97,7 +97,7 @@ Selects and lightly cleans `raw_pitchers`. Exposes the columns dbt marts and dow
 Same pattern for batters. Exposes `player_id`, `season`, `iso`, `contact_quality_score`, and the normalized barrel/sweet-spot/exit-velo metrics computed in `migrate_to_duckdb.py`.
 
 ### `dbt/models/marts/mart_pitcher_profiles.sql`
-The primary analytical mart. Joins `stg_pitchers` with aggregate batter contact quality to produce a per-pitcher profile row. Adds an `era_regression_flag` (`1` when ERA is materially above FIP — a sign of likely ERA regression) and surfaces the metrics most useful for scouting reports.
+The primary analytical mart. Joins `stg_pitchers` with aggregate batter contact quality to produce a per-pitcher profile row. Adds `era_minus_fip` and an `era_regression_flag` (`1` when ERA is at least 0.50 above the FIP proxy with 20+ IP — a sign of likely ERA regression; until 2026-10-21 the SQL compared ERA with xwOBA by mistake) and surfaces the metrics most useful for scouting reports.
 
 ---
 

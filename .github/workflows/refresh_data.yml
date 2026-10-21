@@ -25,13 +25,32 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # AUDITED 2026-10-21: data/Pitchers_Stats.csv and data/Batters_Stats.csv are not in the
+      # repo, so this job would fail every Sunday. Until they're committed (or fetched here),
+      # the dbt steps are skipped with a visible warning instead of a red run.
+      - name: Check source CSVs
+        id: sources
+        run: |
+          if [ -f data/Pitchers_Stats.csv ] && [ -f data/Batters_Stats.csv ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::data/Pitchers_Stats.csv / data/Batters_Stats.csv not committed; skipping DuckDB seed and dbt."
+            echo "present=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: dbt layer test on fixture data (always runs)
+        run: python -m pytest tests -q
+
       - name: Seed DuckDB from CSVs
+        if: steps.sources.outputs.present == 'true'
         run: python migrate_to_duckdb.py
 
       - name: Run dbt build
+        if: steps.sources.outputs.present == 'true'
         run: dbt build --project-dir dbt --profiles-dir dbt
 
       - name: Row count summary
+        if: steps.sources.outputs.present == 'true'
         run: |
           python - <<'EOF'
           import duckdb
@@ -45,4 +64,5 @@ jobs:
           EOF
 
       - name: Run dbt tests
+        if: steps.sources.outputs.present == 'true'
         run: dbt test --project-dir dbt --profiles-dir dbt

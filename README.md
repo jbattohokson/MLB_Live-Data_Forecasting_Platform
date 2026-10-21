@@ -29,6 +29,14 @@ Every tool function and pipeline stage was actually run against live data — 3x
 
 Two things couldn't be tested end-to-end in this environment and are documented rather than assumed: `migrate_to_duckdb.py` (the source CSVs aren't present in this copy of the repo — the dbt layer was still verified against the already-built database) and the live Claude chat loop itself (no `ANTHROPIC_API_KEY` available here — the seven underlying tool functions it calls were fully tested instead).
 
+## Audit 2026-10-21
+
+- **The ERA regression flag flagged almost everyone.** `mart_pitcher_profiles` set `era_regression_flag = 1` when `p_era > xwoba + 0.50`. xwOBA is a rate around 0.300, so any ERA above ~0.80 tripped it. It now compares ERA with the FIP proxy already in the table (ERA ≥ FIP + 0.50, with 20+ IP so tiny samples don't flag), matching what `PROJECT_STRUCTURE.md` always said it did. `era_minus_fip` is exposed as a column.
+- **The weekly workflow would fail every Sunday.** It seeds DuckDB from `data/Pitchers_Stats.csv` / `data/Batters_Stats.csv`, which aren't in the repo, and `migrate_to_duckdb.py` exited 0 on a missing file, so the failure surfaced later inside dbt. The script now exits 1. The workflow skips the dbt steps with a visible warning when the CSVs are absent, and always runs the new fixture-based tests.
+- **The regression tool's Baseball-Reference fallback** (used whenever FanGraphs returns 403) kept every pitcher, including 1-inning appearances, while the output said "min 30 IP". It also used BR's `180.2` innings notation as a decimal in FIP. Both are fixed. Cross-validation now scales inside each fold and shuffles, because the source arrives sorted.
+- **Tests added** (`tests/test_analytics_layer.py`): migration plus a real `dbt build` (models and data tests) on fixture CSVs, innings/FIP math, the regression flag, contact-quality ordering, and the regression fallback with mocked pybaseball.
+- **Not re-run here:** the live pipeline and agent tools. This environment's network policy blocks Baseball Savant, FanGraphs and the MLB Stats API, so the 2026-09-16 live results below weren't reproduced.
+
 ## Live demo
 
 *(This is the single highest-leverage thing to finish before applications: deploy to Streamlit Community Cloud — free — and put the live URL here and at the top of the resume bullet. A working link beats a GitHub README every time a recruiter has 30 seconds.)*

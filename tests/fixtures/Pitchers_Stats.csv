@@ -1,0 +1,4 @@
+player_id,year,"last_name, first_name",p_era,xwoba,woba,babip,whiff_percent,k_percent,bb_percent,barrel_batted_rate,sweet_spot_percent,exit_velocity_avg,hard_hit_percent,strikeout,walk,home_run,p_formatted_ip
+1001,2025,"Unlucky, Arm",4.50,0.300,0.320,0.320,31.0,27.0,7.0,6.0,32.0,88.0,36.0,200,50,20,180.0
+1002,2025,"Steady, Arm",3.00,0.290,0.285,0.280,25.0,27.0,7.0,6.0,32.0,88.0,36.0,200,50,20,180.0
+1003,2025,"Tiny, Sample",13.50,0.380,0.400,0.350,20.0,18.0,11.0,10.0,35.0,91.0,45.0,8,5,3,10.1

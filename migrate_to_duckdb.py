@@ -1,4 +1,6 @@
 import logging
+import os
+import sys
 import duckdb
 from pathlib import Path
 
@@ -8,20 +10,25 @@ ROOT         = Path(__file__).resolve().parent
 DB_PATH      = ROOT / "mlb_analytics.duckdb"
 PITCHERS_CSV = ROOT / "data" / "Pitchers_Stats.csv"
 BATTERS_CSV  = ROOT / "data" / "Batters_Stats.csv"
+# DBT_DB_PATH is the same variable dbt/profiles.yml reads, so both point at one file
+if os.environ.get("DBT_DB_PATH"):
+    DB_PATH = Path(os.environ["DBT_DB_PATH"])
 
 
-def migrate_data() -> None:
+def migrate_data() -> int:
+    """Returns a process exit code. AUDITED 2026-10-21: every failure used to log and
+    return None, so the script exited 0 and CI only failed later inside dbt."""
     for path in (PITCHERS_CSV, BATTERS_CSV):
         if not path.exists():
             logging.error("Source file not found: %s", path)
-            return
+            return 1
 
     try:
         # duckdb.connect() accepts a Path object directly in DuckDB >= 0.9.x.
         con = duckdb.connect(DB_PATH)
     except duckdb.Error as exc:
         logging.error("Cannot open database %s: %s", DB_PATH, exc)
-        return
+        return 1
 
     try:
         # pathlib produces forward-slash paths on macOS/Linux; DuckDB handles both
@@ -136,12 +143,14 @@ def migrate_data() -> None:
         b_count = con.execute("SELECT COUNT(*) FROM raw_batters").fetchone()[0]
         logging.info("Batters loaded:  %d (expected ~1520)", b_count)
         logging.info("Tables written: raw_pitchers, raw_batters")
+        return 0
 
     except duckdb.Error as exc:
         logging.error("Migration failed: %s", exc)
+        return 1
     finally:
         con.close()
 
 
 if __name__ == "__main__":
-    migrate_data()
+    sys.exit(migrate_data())
