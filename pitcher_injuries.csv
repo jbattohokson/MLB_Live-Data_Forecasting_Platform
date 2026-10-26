@@ -1,0 +1,331 @@
+﻿player_name,name_suffix,team,position,injury_type,injury_status,il_date,return_estimate,notes,data_source,pulled_at
+Justin Martinez,,,P,Back,10-Day IL,2026-02-14,TBD,Arizona Diamondbacks placed RHP Justin Martinez on the 60-day injured list. Recovery from right ulnar collateral ligament surgery.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jeffrey Springs,,,P,Hip,10-Day IL,2026-08-04,TBD,"Athletics placed LHP Jeffrey Springs on the 15-day injured list retroactive to August 1, 2026. Right hip discomfort.",mlb_api,2026-09-16T01:36:46.527890+00:00
+José Suarez,,,P,Hip,10-Day IL,2026-08-12,TBD,Athletics placed LHP José Suarez on the 15-day injured list. Right hip strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Justin Sterner,,,P,Knee,10-Day IL,2026-08-16,TBD,Athletics transferred RHP Justin Sterner from the 15-day injured list to the 60-day injured list. Right knee chondromalacia.,mlb_api,2026-09-16T01:36:46.527890+00:00
+J.T. Ginn,,,P,Elbow,10-Day IL,2026-09-05,TBD,Athletics placed RHP J.T. Ginn on the 15-day injured list. Right elbow impingement.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Gage Jump,,,P,Shoulder,10-Day IL,2026-09-15,TBD,"Athletics placed LHP Gage Jump on the 15-day injured list retroactive to September 13, 2026. Left shoulder impingement.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Zack Wheeler,,,P,Shoulder,10-Day IL,2026-03-25,TBD,"Philadelphia Phillies placed RHP Zack Wheeler on the 15-day injured list retroactive to March 22, 2026. Right shoulder surgery.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Orion Kerkering,,,P,Hamstring,10-Day IL,2026-03-25,TBD,"Philadelphia Phillies placed RHP Orion Kerkering on the 15-day injured list retroactive to March 22, 2026. Right hamstring strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Max Lazar,,,P,Oblique,10-Day IL,2026-03-25,TBD,"Philadelphia Phillies placed RHP Max Lazar on the 15-day injured list retroactive to March 22, 2026. Left oblique strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Zach Pop,,,P,Calf,10-Day IL,2026-04-13,TBD,Philadelphia Phillies placed RHP Zach Pop on the 15-day injured list. Right calf strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jonathan Bowlan,,,P,Groin,10-Day IL,2026-04-13,TBD,Philadelphia Phillies placed RHP Jonathan Bowlan on the 15-day injured list. Right groin strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jhoan Duran,,,P,Oblique,10-Day IL,2026-04-18,TBD,"Philadelphia Phillies placed RHP Jhoan Duran on the 15-day injured list retroactive to April 15, 2026. Left oblique strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Kyle Backhus,,,P,Elbow,10-Day IL,2026-04-30,TBD,"Philadelphia Phillies placed LHP Kyle Backhus on the 15-day injured list retroactive to April 27, 2026. Left elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Mark Leiter,Jr.,,P,Hip,10-Day IL,2026-07-30,TBD,Athletics transferred RHP Mark Leiter Jr. from the 15-day injured list to the 60-day injured list. Right hip impingement.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Angel Chivilli,,,P,Undisclosed,10-Day IL,2026-06-11,TBD,New York Yankees activated RHP Angel Chivilli from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Carlos Rodón,,,P,Elbow,10-Day IL,2026-07-03,TBD,"New York Yankees placed LHP Carlos Rodón on the 15-day injured list retroactive to June 30, 2026. Left elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Max Fried,,,P,Undisclosed,10-Day IL,2026-07-22,TBD,New York Yankees activated LHP Max Fried from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Kervin Castro,,,P,Elbow,10-Day IL,2026-08-11,TBD,"New York Yankees placed RHP Kervin Castro on the 15-day injured list retroactive to August 10, 2026. Right elbow neuritis.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Ryan Weathers,,,P,Forearm,10-Day IL,2026-08-23,TBD,New York Yankees placed LHP Ryan Weathers on the 15-day injured list. Left forearm flexor strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Fernando Cruz,,,P,Elbow,10-Day IL,2026-08-26,TBD,New York Yankees placed RHP Fernando Cruz on the 15-day injured list. Right elbow discomfort.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Aaron Civale,,,P,Shoulder,10-Day IL,2026-05-26,TBD,Athletics placed RHP Aaron Civale on the 15-day injured list. Right shoulder tendinits.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Luis Severino,,,P,Undisclosed,10-Day IL,2026-05-30,TBD,Athletics placed RHP Luis Severino on the 15-day injured list. Right should strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Brooks Kriske,,,P,Shoulder,10-Day IL,2026-06-02,TBD,Athletics transferred RHP Brooks Kriske from the 15-day injured list to the 60-day injured list. Right shoulder impingement.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Brad Keller,,,P,Forearm,10-Day IL,2026-06-16,TBD,"Philadelphia Phillies placed RHP Brad Keller on the 15-day injured list retroactive to June 14, 2026. Right forearm tendinitis.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Jason Adam,,,P,Undisclosed,10-Day IL,2026-03-25,TBD,San Diego Padres placed RHP Jason Adam on the 15-day injured list. Left quad surgery.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Matt Waldron,,,P,Undisclosed,10-Day IL,2026-03-25,TBD,San Diego Padres placed RHP Matt Waldron on the 15-day injured list. Surgery.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jeremiah Estrada,,,P,Elbow,10-Day IL,2026-04-10,TBD,San Diego Padres placed RHP Jeremiah Estrada on the 15-day injured list. Right elbow tendenitis.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Nick Pivetta,,,P,Elbow,10-Day IL,2026-04-14,TBD,"San Diego Padres placed RHP Nick Pivetta on the 15-day injured list retroactive to April 13, 2026. Right elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Griffin Canning,,,P,Undisclosed,10-Day IL,2026-05-03,TBD,San Diego Padres activated RHP Griffin Canning from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Germán Márquez,,,P,Forearm,10-Day IL,2026-05-03,TBD,"San Diego Padres placed RHP Germán Márquez on the 15-day injured list retroactive to May 2, 2026. Forearm nerve inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Yuki Matsui,,,P,Groin,10-Day IL,2026-03-25,TBD,San Diego Padres placed LHP Yuki Matsui on the 15-day injured list. Left groin strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jhony Brito,,,P,Undisclosed,10-Day IL,2026-06-05,TBD,San Diego Padres activated RHP Jhony Brito from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+David Morgan,,,P,Knee,10-Day IL,2026-06-29,TBD,"San Diego Padres placed RHP David Morgan on the 15-day injured list retroactive to June 28, 2026. Left knee inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Randy Vásquez,,,P,Ankle,10-Day IL,2026-07-03,TBD,San Diego Padres placed RHP Randy Vásquez on the 15-day injured list. Right ankle contusion.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Braxton Ashcraft,,,P,Undisclosed,10-Day IL,2026-09-10,TBD,"Pittsburgh Pirates placed RHP Braxton Ashcraft on the 15-day injured list retroactive to September 7, 2026. Right arm discomfort.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Lou Trivino,III,,P,Undisclosed,10-Day IL,2026-07-08,TBD,"Philadelphia Phillies placed RHP Lou Trivino III on the 15-day injured list retroactive to July 7, 2026. Right thoracic muscle spasm.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Tanner Banks,,,P,Forearm,10-Day IL,2026-07-09,TBD,Philadelphia Phillies placed LHP Tanner Banks on the 15-day injured list. Left forearm strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Caleb Kilian,,,P,Oblique,10-Day IL,2026-08-10,TBD,Philadelphia Phillies placed RHP Caleb Kilian on the 15-day injured list. Left oblique strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jesús Luzardo,,,P,Shoulder,10-Day IL,2026-09-15,TBD,"Philadelphia Phillies placed LHP Jesús Luzardo on the 15-day injured list retroactive to September 12, 2026. Left shoulder inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Jared Jones,,,P,Undisclosed,10-Day IL,2026-02-11,TBD,Pittsburgh Pirates placed RHP Jared Jones on the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Chris Devenski,,,P,Undisclosed,10-Day IL,2026-05-07,TBD,Pittsburgh Pirates transferred RHP Chris Devenski from the 15-day injured list to the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Wilber Dotel,,,P,Lat,10-Day IL,2026-06-13,TBD,Pittsburgh Pirates placed RHP Wilber Dotel on the 15-day injured list. Right lat muscle strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Evan Sisk,,,P,Elbow,10-Day IL,2026-07-04,TBD,"Pittsburgh Pirates placed LHP Evan Sisk on the 15-day injured list retroactive to July 1, 2026. Left elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Mitch Keller,,,P,Undisclosed,10-Day IL,2026-08-03,TBD,Pittsburgh Pirates placed RHP Mitch Keller on the 60-day injured list. Right arm teres major muscle injury.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Kirby Yates,,,P,Shoulder,10-Day IL,2026-09-03,TBD,"Pittsburgh Pirates placed RHP Kirby Yates on the 15-day injured list retroactive to August 31, 2026. Right shoulder impingement.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Isaac Mattson,,,P,Hip,10-Day IL,2026-09-08,TBD,Pittsburgh Pirates placed RHP Isaac Mattson on the 15-day injured list. Right hip impingement.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Gerrit Cole,,,P,Undisclosed,10-Day IL,2026-05-22,TBD,New York Yankees activated RHP Gerrit Cole from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Dl Hall,,,P,Undisclosed,10-Day IL,2026-06-05,TBD,Milwaukee Brewers placed LHP DL Hall on the 15-day injured list. Left pectoral strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Brian Fitzpatrick,,,P,Elbow,10-Day IL,2026-06-06,TBD,Milwaukee Brewers placed LHP Brian Fitzpatrick on the 15-day injured list. Left elbow injury.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Carlos Rodriguez,,,P,Undisclosed,10-Day IL,2026-06-08,TBD,"Milwaukee Brewers placed RHP Carlos Rodriguez on the 15-day injured list retroactive to May 31, 2026.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Coleman Crow,,,P,Forearm,10-Day IL,2026-06-12,TBD,"Milwaukee Brewers placed RHP Coleman Crow on the 15-day injured list retroactive to June 10, 2026. Right forearm flexor strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Brandon Woodruff,,,P,Undisclosed,10-Day IL,2026-06-22,TBD,Milwaukee Brewers activated RHP Brandon Woodruff from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jared Koenig,,,P,Undisclosed,10-Day IL,2026-06-26,TBD,Milwaukee Brewers activated LHP Jared Koenig from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Logan Henderson,,,P,Undisclosed,10-Day IL,2026-07-09,TBD,Milwaukee Brewers activated RHP Logan Henderson from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Kyle Harrison,,,P,Forearm,10-Day IL,2026-07-11,TBD,"Milwaukee Brewers placed LHP Kyle Harrison on the 15-day injured list retroactive to July 9, 2026. Left forearm tightness.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Jojo Romero,,,P,Undisclosed,10-Day IL,2026-08-03,TBD,Milwaukee Brewers placed LHP JoJo Romero on the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Abner Uribe,,,P,Forearm,10-Day IL,2026-08-14,TBD,"Milwaukee Brewers placed RHP Abner Uribe on the 15-day injured list retroactive to August 11, 2026. Right forearm flexor strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Bryse Wilson,,,P,Back,10-Day IL,2026-08-31,TBD,Milwaukee Brewers placed RHP Bryse Wilson on the 15-day injured list. Low back strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Grant Anderson,,,P,Biceps,10-Day IL,2026-09-07,TBD,Milwaukee Brewers placed RHP Grant Anderson on the 15-day injured list. Right biceps inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Angel Zerpa,,,P,Forearm,10-Day IL,2026-05-31,TBD,Milwaukee Brewers transferred LHP Angel Zerpa from the 15-day injured list to the 60-day injured list. Left forearm tightness.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Andrew Nardi,,,P,Undisclosed,10-Day IL,2026-05-30,TBD,"Miami Marlins placed LHP Andrew Nardi on the 15-day injured list retroactive to May 28, 2026. Left rib cage stress reaction.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Josh Ekness,,,P,Calf,10-Day IL,2026-06-01,TBD,"Miami Marlins placed RHP Josh Ekness on the 15-day injured list retroactive to May 29, 2026. Right calf strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Eury Pérez,,,P,Undisclosed,10-Day IL,2026-06-24,TBD,Miami Marlins activated RHP Eury Pérez from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Anthony Bender,,,P,Undisclosed,10-Day IL,2026-06-30,TBD,Miami Marlins placed RHP Anthony Bender on the 15-day injured list. Right shin stress reaction.,mlb_api,2026-09-16T01:36:46.527890+00:00
+John King,,,P,Ankle,10-Day IL,2026-07-09,TBD,"Miami Marlins placed LHP John King on the 15-day injured list retroactive to July 8, 2026. Left lateral ankle sprain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Janson Junk,,,P,Undisclosed,10-Day IL,2026-07-09,TBD,Miami Marlins activated RHP Janson Junk from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+William Kempner,,,P,Elbow,10-Day IL,2026-07-12,TBD,Miami Marlins placed RHP William Kempner on the 15-day injured list. Right elbow sprain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Max Meyer,,,P,Neck,10-Day IL,2026-07-20,TBD,"Miami Marlins placed RHP Max Meyer on the 15-day injured list retroactive to July 19, 2026. Neck strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Pete Fairbanks,,,P,Undisclosed,10-Day IL,2026-08-25,TBD,Miami Marlins placed RHP Pete Fairbanks on the 15-day injured list. Right median nerve irritation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Craig Yoho,,,P,Calf,10-Day IL,2026-03-25,TBD,"Milwaukee Brewers placed RHP Craig Yoho on the 15-day injured list retroactive to March 22, 2026. Right calf strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Travis Adams,,,P,Triceps,10-Day IL,2026-03-25,TBD,"Minnesota Twins placed RHP Travis Adams on the 15-day injured list retroactive to March 22, 2026. Right triceps strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Cody Laweryson,,,P,Forearm,10-Day IL,2026-04-11,TBD,"Minnesota Twins placed RHP Cody Laweryson on the 15-day injured list retroactive to April 9, 2026. Right forearm strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Mick Abel,,,P,Elbow,10-Day IL,2026-04-20,TBD,"Minnesota Twins placed RHP Mick Abel on the 15-day injured list retroactive to April 17, 2026. Right elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Dedniel Núñez,,,P,Undisclosed,10-Day IL,2026-02-15,TBD,New York Mets placed RHP Dedniel Núñez on the 60-day injured list. Tommy John surgery recovery.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Justin Hagenman,,,P,Undisclosed,10-Day IL,2026-03-14,TBD,New York Mets placed RHP Justin Hagenman on the 60-day injured list. Rib Fracture.,mlb_api,2026-09-16T01:36:46.527890+00:00
+A.J. Minter,,,P,Lat,10-Day IL,2026-03-25,TBD,"New York Mets placed LHP A.J. Minter on the 15-day injured list retroactive to March 22, 2026. Left lat surgery.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Joey Gerber,,,P,Finger,10-Day IL,2026-04-14,TBD,New York Mets placed RHP Joey Gerber on the 15-day injured list. Right finger blister.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Kodai Senga,,,P,Undisclosed,10-Day IL,2026-04-28,TBD,"New York Mets placed RHP Kodai Senga on the 15-day injured list retroactive to April 27, 2026. Lumbar spine inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Clay Holmes,,,P,Undisclosed,10-Day IL,2026-05-16,TBD,New York Mets placed RHP Clay Holmes on the 15-day injured list. Right fibula fracture.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Joe Ryan,,,P,Undisclosed,10-Day IL,2026-09-07,TBD,Minnesota Twins activated RHP Joe Ryan from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Austin Warren,,,P,Forearm,10-Day IL,2026-07-08,TBD,New York Mets placed RHP Austin Warren on the 15-day injured list. Right forearm strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Cionel Pérez,,,P,Forearm,10-Day IL,2026-07-31,TBD,"New York Mets placed LHP Cionel Pérez on the 15-day injured list retroactive to July 30, 2026. Left forearm strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Devin Williams,,,P,Shoulder,10-Day IL,2026-08-10,TBD,"New York Mets placed RHP Devin Williams on the 15-day injured list retroactive to August 8, 2026. Right shoulder strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Christian Scott,,,P,Hip,10-Day IL,2026-06-15,TBD,"New York Mets placed RHP Christian Scott on the 15-day injured list retroactive to June 12, 2026. Right hip impingement.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Mike Paredes,,,P,Oblique,10-Day IL,2026-08-01,TBD,Minnesota Twins transferred RHP Mike Paredes from the 15-day injured list to the 60-day injured list. Left oblique strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Cole Sands,,,P,Elbow,10-Day IL,2026-07-31,TBD,Minnesota Twins transferred RHP Cole Sands from the 15-day injured list to the 60-day injured list. Right elbow strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Garrett Acton,,,P,Shoulder,10-Day IL,2026-04-28,TBD,"Minnesota Twins placed RHP Garrett Acton on the 15-day injured list retroactive to April 26, 2026. Right shoulder strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Taj Bradley,,,P,Undisclosed,10-Day IL,2026-05-09,TBD,"Minnesota Twins placed RHP Taj Bradley on the 15-day injured list retroactive to May 6, 2026. Right pectoralis muscle inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Kendry Rojas,,,P,Elbow,10-Day IL,2026-05-29,TBD,"Minnesota Twins placed LHP Kendry Rojas on the 15-day injured list retroactive to May 26, 2026. Left elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Bailey Ober,,,P,Elbow,10-Day IL,2026-05-31,TBD,Minnesota Twins placed RHP Bailey Ober on the 15-day injured list. Right elbow inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Anthony Banda,,,P,Lat,10-Day IL,2026-06-29,TBD,Minnesota Twins placed LHP Anthony Banda on the 15-day injured list. Left lat strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Marco Raya,,,P,Shoulder,10-Day IL,2026-07-08,TBD,"Minnesota Twins placed RHP Marco Raya on the 15-day injured list retroactive to July 5, 2026. Right shoulder impingement.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Connor Prielipp,,,P,Finger,10-Day IL,2026-07-09,TBD,Minnesota Twins placed LHP Connor Prielipp on the 15-day injured list. Left middle finger blister.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jakob Junis,,,P,Undisclosed,10-Day IL,2026-07-18,TBD,Texas Rangers activated RHP Jakob Junis from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jose Corniell,,,P,Undisclosed,10-Day IL,2026-07-21,TBD,Texas Rangers placed RHP Jose Corniell on the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Chris Martin,,,P,Undisclosed,10-Day IL,2026-08-03,TBD,Texas Rangers activated RHP Chris Martin from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Cody Bradford,,,P,Undisclosed,10-Day IL,2026-08-05,TBD,Texas Rangers activated LHP Cody Bradford from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jordan Montgomery,,,P,Undisclosed,10-Day IL,2026-08-07,TBD,Texas Rangers activated LHP Jordan Montgomery from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jack Leiter,,,P,Ankle,10-Day IL,2026-08-09,TBD,Texas Rangers transferred RHP Jack Leiter from the 15-day injured list to the 60-day injured list. Right ankle posterior impingement.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Nathan Eovaldi,,,P,Elbow,10-Day IL,2026-08-10,TBD,"Texas Rangers placed RHP Nathan Eovaldi on the 15-day injured list retroactive to August 9, 2026. Right posterior elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Cole Winn,,,P,Undisclosed,10-Day IL,2026-08-31,TBD,"Texas Rangers placed RHP Cole Winn on the 15-day injured list retroactive to August 28, 2026. Right rotator cuff strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Robert Garcia,,,P,Undisclosed,10-Day IL,2026-09-07,TBD,Texas Rangers activated LHP Robert Garcia from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Trey Yesavage,,,P,Shoulder,10-Day IL,2026-03-25,TBD,"Toronto Blue Jays placed RHP Trey Yesavage on the 15-day injured list retroactive to March 22, 2026. Right shoulder impingement.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Shane Bieber,,,P,Elbow,10-Day IL,2026-03-25,TBD,"Toronto Blue Jays placed RHP Shane Bieber on the 15-day injured list retroactive to March 22, 2026. Right elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Cody Ponce,,,P,Knee,10-Day IL,2026-03-31,TBD,Toronto Blue Jays placed RHP Cody Ponce on the 15-day injured list. Right knee ACL sprain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Lazaro Estrada,,,P,Undisclosed,10-Day IL,2026-04-05,TBD,Toronto Blue Jays placed RHP Lazaro Estrada on the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Peyton Gray,,,P,Elbow,10-Day IL,2026-08-31,TBD,"Texas Rangers placed RHP Peyton Gray on the 15-day injured list retroactive to August 30, 2026. Right elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Max Scherzer,,,P,Forearm,10-Day IL,2026-04-27,TBD,"Toronto Blue Jays placed RHP Max Scherzer on the 15-day injured list retroactive to April 25, 2026. Right forearm tendinitis and Left ankle inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Jalen Beeks,,,P,Undisclosed,10-Day IL,2026-07-10,TBD,Texas Rangers transferred LHP Jalen Beeks from the 10-day injured list to the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Manuel Rodríguez,,,P,Back,10-Day IL,2026-09-04,TBD,"Tampa Bay Rays placed RHP Manuel Rodríguez on the 15-day injured list retroactive to September 3, 2026. Low back strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Shane Mcclanahan,,,P,Forearm,10-Day IL,2026-09-04,TBD,Tampa Bay Rays placed LHP Shane McClanahan on the 15-day injured list. Left forearm tightness.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Garrett Cleavinger,,,P,Forearm,10-Day IL,2026-09-05,TBD,Tampa Bay Rays placed LHP Garrett Cleavinger on the 15-day injured list. Left forearm tightness.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Tyler Wells,,,P,Forearm,10-Day IL,2026-09-15,TBD,"Tampa Bay Rays placed RHP Tyler Wells on the 15-day injured list retroactive to September 13, 2026. Right forearm tightness.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Carter Baumler,,,P,Undisclosed,10-Day IL,2026-04-05,TBD,Texas Rangers placed RHP Carter Baumler on the 15-day injured list. Right intercostal strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Luis Curvelo,,,P,Biceps,10-Day IL,2026-04-15,TBD,Texas Rangers placed RHP Luis Curvelo on the 15-day injured list. Right biceps strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Tommy Nance,,,P,Forearm,10-Day IL,2026-05-17,TBD,Toronto Blue Jays placed RHP Tommy Nance on the 15-day injured list. Right forearm discomfort.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Joe Mantiply,,,P,Knee,10-Day IL,2026-05-19,TBD,"Toronto Blue Jays placed LHP Joe Mantiply on the 15-day injured list retroactive to May 18, 2026. Left knee inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Clayton Beeter,,,P,Undisclosed,10-Day IL,2026-05-21,TBD,Washington Nationals activated RHP Clayton Beeter from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jake Irvin,,,P,Shoulder,10-Day IL,2026-05-24,TBD,Washington Nationals placed RHP Jake Irvin on the 15-day injured list. Right shoulder strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Max Kranick,,,P,Elbow,10-Day IL,2026-05-25,TBD,Washington Nationals transferred RHP Max Kranick from the 15-day injured list to the 60-day injured list. Right elbow surgery recovery.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Cole Henry,,,P,Undisclosed,10-Day IL,2026-05-29,TBD,Washington Nationals activated RHP Cole Henry from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Mitchell Parker,,,P,Elbow,10-Day IL,2026-06-29,TBD,Washington Nationals placed LHP Mitchell Parker on the 15-day injured list. Left elbow inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Richard Lovelady,,,P,Triceps,10-Day IL,2026-06-29,TBD,Washington Nationals placed LHP Richard Lovelady on the 15-day injured list. Left triceps strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Brad Lord,,,P,Undisclosed,10-Day IL,2026-07-09,TBD,"Washington Nationals placed RHP Brad Lord on the 15-day injured list retroactive to July 6, 2026. Left side tightness.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Ken Waldichuk,,,P,Forearm,10-Day IL,2026-04-16,TBD,Washington Nationals transferred LHP Ken Waldichuk from the 15-day injured list to the 60-day injured list. Left forearm tightness.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Pj Poulin,,,P,Undisclosed,10-Day IL,2026-07-19,TBD,"Washington Nationals placed LHP PJ Poulin on the 15-day injured list retroactive to July 16, 2026. Left flexor strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Connelly Early,,,P,Elbow,10-Day IL,2026-07-26,TBD,Washington Nationals placed LHP Connelly Early on the 15-day injured list. Left elbow inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Trevor Williams,,,P,Undisclosed,10-Day IL,2026-07-29,TBD,Washington Nationals activated RHP Trevor Williams from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Orlando Ribalta,,,P,Forearm,10-Day IL,2026-09-07,TBD,"Washington Nationals placed RHP Orlando Ribalta on the 15-day injured list retroactive to September 4, 2026. Right forearm inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Paxton Schultz,,,P,Undisclosed,10-Day IL,2026-04-07,TBD,Washington Nationals activated RHP Paxton Schultz from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Dylan Cease,,,P,Hamstring,10-Day IL,2026-05-25,TBD,Toronto Blue Jays placed RHP Dylan Cease on the 15-day injured list. Left hamstring strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Patrick Corbin,,,P,Undisclosed,10-Day IL,2026-07-23,TBD,"Toronto Blue Jays placed LHP Patrick Corbin on the 15-day injured list retroactive to July 22, 2026. Left teres major strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Jameson Taillon,,,P,Forearm,10-Day IL,2026-08-11,TBD,Toronto Blue Jays placed RHP Jameson Taillon on the 15-day injured list. Right forearm tendinits.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Spencer Arrighetti,,,P,Undisclosed,10-Day IL,2026-08-21,TBD,Toronto Blue Jays activated RHP Spencer Arrighetti from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Cole Sulser,,,P,Undisclosed,10-Day IL,2026-09-04,TBD,Tampa Bay Rays activated RHP Cole Sulser from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Lucas Giolito,,,P,Elbow,10-Day IL,2026-08-24,TBD,San Diego Padres transferred RHP Lucas Giolito from the 15-day injured list to the 60-day injured list. Right elbow inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Griffin Jax,,,P,Undisclosed,10-Day IL,2026-09-02,TBD,Tampa Bay Rays activated RHP Griffin Jax from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Sam Hentges,,,P,Shoulder,10-Day IL,2026-03-25,TBD,"San Francisco Giants placed LHP Sam Hentges on the 15-day injured list retroactive to March 22, 2026. Right knee and left shoulder surgery.",mlb_api,2026-09-16T01:36:46.527890+00:00
+José Buttó,,,P,Undisclosed,10-Day IL,2026-04-02,TBD,San Francisco Giants placed RHP José Buttó on the 15-day injured list. Right arm fatigue.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Erik Miller,,,P,Back,10-Day IL,2026-05-04,TBD,"San Francisco Giants placed LHP Erik Miller on the 15-day injured list retroactive to May 1, 2026. Low back strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Joel Peguero,,,P,Undisclosed,10-Day IL,2026-05-05,TBD,San Francisco Giants activated RHP Joel Peguero from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Logan Webb,,,P,Knee,10-Day IL,2026-05-09,TBD,"San Francisco Giants placed RHP Logan Webb on the 15-day injured list retroactive to May 6, 2026. Right knee bursitis.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Tyler Mahle,,,P,Hamstring,10-Day IL,2026-05-29,TBD,"San Francisco Giants placed RHP Tyler Mahle on the 15-day injured list retroactive to May 27, 2026. Left hamstring strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Reiver Sanmartin,,,P,Hip,10-Day IL,2026-03-25,TBD,San Francisco Giants placed LHP Reiver Sanmartin on the 60-day injured list. Right hip flexor strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Matt Gage,,,P,Knee,10-Day IL,2026-06-03,TBD,"San Francisco Giants placed LHP Matt Gage on the 15-day injured list retroactive to June 2, 2026. Right knee inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Keaton Winn,,,P,Elbow,10-Day IL,2026-06-14,TBD,"San Francisco Giants placed RHP Keaton Winn on the 15-day injured list retroactive to June 11, 2026. Right elbow strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Jason Foley,,,P,Undisclosed,10-Day IL,2026-07-12,TBD,San Francisco Giants activated RHP Jason Foley from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Trevor Mcdonald,,,P,Elbow,10-Day IL,2026-07-21,TBD,San Francisco Giants placed RHP Trevor McDonald on the 15-day injured list. Right elbow strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Nick Davila,,,P,Undisclosed,10-Day IL,2026-09-06,TBD,Seattle Mariners transferred RHP Nick Davila from the 15-day injured list to the 60-day injured list. SC joint sprain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Carlos Vargas,,,P,Undisclosed,10-Day IL,2026-03-24,TBD,Seattle Mariners transferred RHP Carlos Vargas from the 15-day injured list to the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Bryce Miller,,,P,Oblique,10-Day IL,2026-03-25,TBD,"Seattle Mariners placed RHP Bryce Miller on the 15-day injured list retroactive to March 22, 2026. Left oblique strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Matt Brash,,,P,Lat,10-Day IL,2026-05-01,TBD,"Seattle Mariners placed RHP Matt Brash on the 15-day injured list retroactive to April 30, 2026. Right lat inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Gabe Speier,,,P,Shoulder,10-Day IL,2026-05-04,TBD,"Seattle Mariners placed LHP Gabe Speier on the 15-day injured list retroactive to May 3, 2026. Left shoulder inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Cooper Criswell,,,P,Shoulder,10-Day IL,2026-06-09,TBD,Seattle Mariners placed RHP Cooper Criswell on the 15-day injured list. Right shoulder strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Cole Wilcox,,,P,Oblique,10-Day IL,2026-08-07,TBD,Seattle Mariners placed RHP Cole Wilcox on the 15-day injured list. Left oblique strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Emerson Hancock,,,P,Undisclosed,10-Day IL,2026-08-30,TBD,"Seattle Mariners placed RHP Emerson Hancock on the 15-day injured list retroactive to August 29, 2026. Left abductor strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Jt Brubaker,,,P,Undisclosed,10-Day IL,2026-08-24,TBD,San Francisco Giants placed RHP JT Brubaker on the 10-day injured list. Bruised ribs.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Michael Grove,,,P,Shoulder,10-Day IL,2026-04-20,TBD,Tampa Bay Rays transferred RHP Michael Grove from the 15-day injured list to the 60-day injured list. Right shoulder surgery.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Steven Matz,,,P,Elbow,10-Day IL,2026-05-05,TBD,"Tampa Bay Rays placed LHP Steven Matz on the 15-day injured list retroactive to May 4, 2026. Left elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Mason Englert,,,P,Undisclosed,10-Day IL,2026-05-08,TBD,Tampa Bay Rays activated RHP Mason Englert from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Joe Boyle,,,P,Undisclosed,10-Day IL,2026-05-18,TBD,Tampa Bay Rays activated RHP Joe Boyle from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jesse Scholtens,,,P,Wrist,10-Day IL,2026-05-26,TBD,Tampa Bay Rays placed RHP Jesse Scholtens on the 15-day injured list. Right wrist sprain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Craig Kimbrel,,,P,Wrist,10-Day IL,2026-05-31,TBD,"Tampa Bay Rays placed RHP Craig Kimbrel on the 15-day injured list retroactive to May 28, 2026. Right wrist strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Jonathan Heasley,,,P,Undisclosed,10-Day IL,2026-06-08,TBD,Tampa Bay Rays transferred RHP Jonathan Heasley from the 15-day injured list to the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Carson Whisenhunt,,,P,Elbow,10-Day IL,2026-08-25,TBD,San Francisco Giants placed LHP Carson Whisenhunt on the 15-day injured list. Left elbow sprain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Adrian Houser,,,P,Forearm,10-Day IL,2026-08-26,TBD,San Francisco Giants placed RHP Adrian Houser on the 15-day injured list. Right forearm strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Hunter Dobbins,,,P,Knee,10-Day IL,2026-03-25,TBD,"St. Louis Cardinals placed RHP Hunter Dobbins on the 15-day injured list retroactive to March 22, 2026. Right knee ACL reconstruction rehab.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Matt Pushard,,,P,Knee,10-Day IL,2026-03-31,TBD,"St. Louis Cardinals placed RHP Matt Pushard on the 15-day injured list retroactive to March 30, 2026. Right knee patellar tendinitis.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Ryan Fernandez,,,P,Back,10-Day IL,2026-06-05,TBD,"St. Louis Cardinals placed RHP Ryan Fernandez on the 15-day injured list retroactive to June 3, 2026. Low back pain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Max Rajcic,,,P,Elbow,10-Day IL,2026-07-06,TBD,"St. Louis Cardinals placed RHP Max Rajcic on the 15-day injured list retroactive to July 4, 2026. Right elbow soreness.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Andre Pallante,,,P,Elbow,10-Day IL,2026-08-21,TBD,"St. Louis Cardinals placed RHP Andre Pallante on the 15-day injured list retroactive to August 18, 2026. Right elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Peter Strzelecki,,,P,Forearm,10-Day IL,2026-08-27,TBD,"St. Louis Cardinals placed RHP Peter Strzelecki on the 15-day injured list retroactive to August 26, 2026. Right forearm extensor inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Robby Snelling,,,P,Ucl,10-Day IL,2026-05-13,TBD,Miami Marlins placed LHP Robby Snelling on the 15-day injured list. Left elbow UCL sprain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Edward Cabrera,,,P,Undisclosed,10-Day IL,2026-06-05,TBD,Chicago Cubs activated RHP Edward Cabrera from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Daniel Palencia,,,P,Elbow,10-Day IL,2026-06-16,TBD,Chicago Cubs placed RHP Daniel Palencia on the 15-day injured list. Right elbow inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Ben Brown,,,P,Neck,10-Day IL,2026-06-24,TBD,"Chicago Cubs placed RHP Ben Brown on the 15-day injured list retroactive to June 21, 2026. Neck strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Matthew Boyd,,,P,Undisclosed,10-Day IL,2026-06-25,TBD,Chicago Cubs activated LHP Matthew Boyd from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Phil Maton,,,P,Knee,10-Day IL,2026-06-26,TBD,Chicago Cubs placed RHP Phil Maton on the 15-day injured list. Right knee tendinitis.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Hoby Milner,,,P,Undisclosed,10-Day IL,2026-06-27,TBD,"Chicago Cubs placed LHP Hoby Milner on the 15-day injured list retroactive to June 26, 2026. Appendicitis.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Ethan Roberts,,,P,Forearm,10-Day IL,2026-06-29,TBD,Chicago Cubs placed RHP Ethan Roberts on the 15-day injured list. right forearm inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Gavin Hollowell,,,P,Shoulder,10-Day IL,2026-07-31,TBD,Chicago Cubs placed RHP Gavin Hollowell on the 15-day injured list. Right shoulder inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Caleb Thielbar,,,P,Undisclosed,10-Day IL,2026-05-19,TBD,Chicago Cubs activated LHP Caleb Thielbar from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Hunter Harvey,,,P,Triceps,10-Day IL,2026-05-17,TBD,Chicago Cubs transferred RHP Hunter Harvey from the 15-day injured list to the 60-day injured list. Right triceps inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Garrett Whitlock,,,P,Elbow,10-Day IL,2026-08-13,TBD,"Boston Red Sox placed RHP Garrett Whitlock on the 15-day injured list retroactive to August 10, 2026. Right elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Justin Slaten,,,P,Elbow,10-Day IL,2026-08-16,TBD,"Boston Red Sox placed RHP Justin Slaten on the 15-day injured list retroactive to August 13, 2026. Right elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Eduardo Rivera,,,P,Undisclosed,10-Day IL,2026-09-01,TBD,Boston Red Sox placed LHP Eduardo Rivera on the 60-day injured list. Lumbar strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Tyron Guerrero,,,P,Shoulder,10-Day IL,2026-09-01,TBD,Boston Red Sox placed RHP Tyron Guerrero on the 15-day injured list. Right shoulder inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jordan Wicks,,,P,Elbow,10-Day IL,2026-03-25,TBD,"Chicago Cubs placed LHP Jordan Wicks on the 15-day injured list retroactive to March 22, 2026. Left elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Cade Horton,,,P,Forearm,10-Day IL,2026-04-05,TBD,"Chicago Cubs placed RHP Cade Horton on the 15-day injured list retroactive to April 4, 2026. Right forearm strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Riley Martin,,,P,Elbow,10-Day IL,2026-05-17,TBD,Chicago Cubs transferred LHP Riley Martin from the 15-day injured list to the 60-day injured list. Left elbow inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Trent Thornton,,,P,Ankle,10-Day IL,2026-09-12,TBD,Chicago Cubs placed RHP Trent Thornton on the 15-day injured list. Left ankle sprain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Chris Murphy,,,P,Elbow,10-Day IL,2026-04-09,TBD,"Chicago White Sox placed LHP Chris Murphy on the 15-day injured list retroactive to April 8, 2026. Left elbow impingement syndrome.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Graham Ashcraft,,,P,Ucl,10-Day IL,2026-05-29,TBD,Cincinnati Reds placed RHP Graham Ashcraft on the 60-day injured list. Right forearm UCL sprain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Pierce Johnson,,,P,Elbow,10-Day IL,2026-05-30,TBD,"Cincinnati Reds placed RHP Pierce Johnson on the 15-day injured list retroactive to May 27, 2026. Right elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Rhett Lowder,,,P,Undisclosed,10-Day IL,2026-06-07,TBD,Cincinnati Reds activated RHP Rhett Lowder from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Tony Santillan,,,P,Oblique,10-Day IL,2026-06-26,TBD,"Cincinnati Reds placed RHP Tony Santillan on the 15-day injured list retroactive to June 23, 2026. Left oblique strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Emilio Pagán,,,P,Undisclosed,10-Day IL,2026-06-30,TBD,Cincinnati Reds activated RHP Emilio Pagán from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Hunter Greene,,,P,Undisclosed,10-Day IL,2026-07-04,TBD,Cincinnati Reds activated RHP Hunter Greene from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Nick Lodolo,,,P,Finger,10-Day IL,2026-07-12,TBD,Cincinnati Reds placed LHP Nick Lodolo on the 15-day injured list. Blister left index finger.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Caleb Ferguson,,,P,Undisclosed,10-Day IL,2026-05-23,TBD,Cincinnati Reds activated LHP Caleb Ferguson from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Brandon Williamson,,,P,Undisclosed,10-Day IL,2026-09-01,TBD,Cincinnati Reds activated LHP Brandon Williamson from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Hunter Gaddis,,,P,Forearm,10-Day IL,2026-03-25,TBD,"Cleveland Guardians placed RHP Hunter Gaddis on the 15-day injured list retroactive to March 22, 2026. Right forearm strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Shawn Armstrong,,,P,Groin,10-Day IL,2026-04-26,TBD,"Cleveland Guardians placed RHP Shawn Armstrong on the 15-day injured list retroactive to April 23, 2026. Right groin strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Erik Sabrowski,,,P,Elbow,10-Day IL,2026-05-25,TBD,"Cleveland Guardians placed LHP Erik Sabrowski on the 15-day injured list retroactive to May 22, 2026. Left elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Jonathan Cannon,,,P,Hip,10-Day IL,2026-04-14,TBD,"Chicago White Sox placed RHP Jonathan Cannon on the 15-day injured list retroactive to April 13, 2026. Right hip inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Jordan Hicks,,,P,Lat,10-Day IL,2026-05-23,TBD,"Chicago White Sox placed RHP Jordan Hicks on the 15-day injured list retroactive to May 21, 2026. Right lat strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Noah Schultz,,,P,Knee,10-Day IL,2026-05-26,TBD,"Chicago White Sox placed LHP Noah Schultz on the 15-day injured list retroactive to May 25, 2026. Right knee patellar tendinitis.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Jordan Leasure,,,P,Undisclosed,10-Day IL,2026-05-29,TBD,Chicago White Sox placed RHP Jordan Leasure on the 15-day injured list. Right flexor strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Tyler Gilbert,,,P,Shoulder,10-Day IL,2026-06-10,TBD,Chicago White Sox placed LHP Tyler Gilbert on the 15-day injured list. Left shoulder impingement.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Davis Martin,,,P,Finger,10-Day IL,2026-08-14,TBD,Chicago White Sox placed RHP Davis Martin on the 15-day injured list. Right middle finger blister.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Huascar Brazobán,,,P,Lat,10-Day IL,2026-08-25,TBD,Chicago White Sox placed RHP Huascar Brazobán on the 15-day injured list. Left lat strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Ranger Suarez,,,P,Undisclosed,10-Day IL,2026-07-26,TBD,Boston Red Sox activated LHP Ranger Suarez from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Zack Kelly,,,P,Elbow,10-Day IL,2026-07-21,TBD,Boston Red Sox placed RHP Zack Kelly on the 60-day injured list. Right elbow inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Danny Young,,,P,Elbow,10-Day IL,2026-04-11,TBD,Atlanta Braves transferred LHP Danny Young from the 15-day injured list to the 60-day injured list. Left elbow reconstruction.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Raisel Iglesias,,,P,Shoulder,10-Day IL,2026-04-21,TBD,"Atlanta Braves placed RHP Raisel Iglesias on the 15-day injured list retroactive to April 20, 2026. Right shoulder inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Dylan Dodd,,,P,Undisclosed,10-Day IL,2026-04-23,TBD,"Atlanta Braves placed LHP Dylan Dodd on the 15-day injured list retroactive to April 22, 2026. Left thoracic spine inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Spencer Strider,,,P,Undisclosed,10-Day IL,2026-05-03,TBD,Atlanta Braves activated RHP Spencer Strider from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Hurston Waldrep,,,P,Elbow,10-Day IL,2026-05-21,TBD,Atlanta Braves transferred RHP Hurston Waldrep from the 15-day injured list to the 60-day injured list. Right elbow surgery.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Tyler Kinley,,,P,Elbow,10-Day IL,2026-06-10,TBD,"Atlanta Braves placed RHP Tyler Kinley on the 15-day injured list retroactive to June 8, 2026. Right elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Aj Smith-Shawver,,,P,Elbow,10-Day IL,2026-04-03,TBD,Atlanta Braves transferred RHP AJ Smith-Shawver from the 15-day injured list to the 60-day injured list. Right elbow reconstruction.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Robert Suarez,,,P,Elbow,10-Day IL,2026-06-26,TBD,"Atlanta Braves placed RHP Robert Suarez on the 15-day injured list retroactive to June 23, 2026. Right elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Martín Pérez,,,P,Forearm,10-Day IL,2026-07-06,TBD,Atlanta Braves placed LHP Martín Pérez on the 15-day injured list. Left forearm contusion.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Reynaldo López,,,P,Knee,10-Day IL,2026-08-02,TBD,"Atlanta Braves placed RHP Reynaldo López on the 15-day injured list retroactive to July 30, 2026. Left knee inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Bryce Elder,,,P,Knee,10-Day IL,2026-09-09,TBD,"Atlanta Braves placed RHP Bryce Elder on the 15-day injured list retroactive to September 6, 2026. Right knee surgery.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Corbin Burnes,,,P,Back,10-Day IL,2026-02-15,TBD,Arizona Diamondbacks placed RHP Corbin Burnes on the 60-day injured list. Right ulnar collateral ligament surgery recovery.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Merrill Kelly,,,P,Back,10-Day IL,2026-03-25,TBD,"Arizona Diamondbacks placed RHP Merrill Kelly on the 15-day injured list retroactive to March 24, 2026. Left intercostal nerve irritation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Blake Walston,,,P,Ucl,10-Day IL,2026-03-25,TBD,Arizona Diamondbacks placed LHP Blake Walston on the 60-day injured list. Left UCL surgery.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Ryne Nelson,,,P,Elbow,10-Day IL,2026-06-19,TBD,"Arizona Diamondbacks placed RHP Ryne Nelson on the 15-day injured list retroactive to June 16, 2026. Strained right elbow.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Michael Soroka,,,P,Back,10-Day IL,2026-06-20,TBD,Arizona Diamondbacks placed RHP Michael Soroka on the 15-day injured list. Left glute strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Zac Gallen,,,P,Elbow,10-Day IL,2026-07-12,TBD,"Arizona Diamondbacks placed RHP Zac Gallen on the 15-day injured list retroactive to July 9, 2026. Right elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Drey Jameson,,,P,Back,10-Day IL,2026-07-21,TBD,"Arizona Diamondbacks placed RHP Drey Jameson on the 15-day injured list retroactive to July 20, 2026. Right hip inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Ryan Thompson,,,P,Back,10-Day IL,2026-09-01,TBD,Arizona Diamondbacks transferred RHP Ryan Thompson from the 15-day injured list to the 60-day injured list. Strained lower back.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Keegan Akin,,,P,Groin,10-Day IL,2026-03-25,TBD,"Baltimore Orioles placed LHP Keegan Akin on the 15-day injured list retroactive to March 22, 2026. Left groin strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Andrew Kittredge,,,P,Shoulder,10-Day IL,2026-03-25,TBD,"Baltimore Orioles placed RHP Andrew Kittredge on the 15-day injured list retroactive to March 22, 2026. Right shoulder inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Ryan Helsley,,,P,Elbow,10-Day IL,2026-07-19,TBD,Baltimore Orioles transferred RHP Ryan Helsley from the 15-day injured list to the 60-day injured list. Right elbow discomfort.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Chris Bassitt,,,P,Undisclosed,10-Day IL,2026-08-14,TBD,Baltimore Orioles activated RHP Chris Bassitt from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Kyle Bradish,,,P,Undisclosed,10-Day IL,2026-09-13,TBD,Baltimore Orioles placed RHP Kyle Bradish on the 15-day injured list. Lower abdominal discomfort.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Patrick Sandoval,,,P,Ucl,10-Day IL,2026-03-25,TBD,"Boston Red Sox placed LHP Patrick Sandoval on the 15-day injured list retroactive to March 22, 2026. Left UCL surgery recovery.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Johan Oviedo,,,P,Elbow,10-Day IL,2026-04-03,TBD,"Boston Red Sox placed RHP Johan Oviedo on the 15-day injured list retroactive to March 31, 2026. Right elbow strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Sonny Gray,,,P,Hamstring,10-Day IL,2026-04-21,TBD,Boston Red Sox placed RHP Sonny Gray on the 15-day injured list. Right hamstring strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Garrett Crochet,,,P,Shoulder,10-Day IL,2026-04-29,TBD,"Boston Red Sox placed LHP Garrett Crochet on the 15-day injured list retroactive to April 26, 2026. Left shoulder inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Danny Coulombe,,,P,Undisclosed,10-Day IL,2026-05-04,TBD,"Boston Red Sox placed LHP Danny Coulombe on the 15-day injured list retroactive to May 2, 2026. Cervical spasms.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Jovani Morán,,,P,Elbow,10-Day IL,2026-06-06,TBD,"Boston Red Sox placed LHP Jovani Morán on the 15-day injured list retroactive to June 5, 2026. Left elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Yaramil Hiraldo,,,P,Undisclosed,10-Day IL,2026-07-11,TBD,Baltimore Orioles activated RHP Yaramil Hiraldo from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Zach Eflin,,,P,Elbow,10-Day IL,2026-04-01,TBD,Baltimore Orioles placed RHP Zach Eflin on the 15-day injured list. Right elbow discomfort.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Dietrich Enns,,,P,Undisclosed,10-Day IL,2026-04-06,TBD,"Baltimore Orioles placed LHP Dietrich Enns on the 15-day injured list retroactive to April 4, 2026. Left foot infection.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Dean Kremer,,,P,Undisclosed,10-Day IL,2026-04-23,TBD,"Baltimore Orioles placed RHP Dean Kremer on the 15-day injured list retroactive to April 20, 2026. Right quad strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Trevor Rogers,,,P,Undisclosed,10-Day IL,2026-04-26,TBD,Baltimore Orioles placed LHP Trevor Rogers on the 15-day injured list. Illness.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Cade Povich,,,P,Elbow,10-Day IL,2026-05-08,TBD,Baltimore Orioles placed LHP Cade Povich on the 15-day injured list. Left elbow inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Grant Wolfram,,,P,Back,10-Day IL,2026-05-12,TBD,"Baltimore Orioles placed LHP Grant Wolfram on the 15-day injured list retroactive to May 9, 2026. Low back strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Tim Herrin,,,P,Elbow,10-Day IL,2026-07-09,TBD,Cleveland Guardians placed LHP Tim Herrin on the 15-day injured list. Left elbow contusion.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Connor Seabold,,,P,Lat,10-Day IL,2026-08-03,TBD,Kansas City Royals transferred RHP Connor Seabold from the 15-day injured list to the 60-day injured list. Right lat strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Luinder Avila,,,P,Forearm,10-Day IL,2026-08-06,TBD,Kansas City Royals transferred RHP Luinder Avila from the 15-day injured list to the 60-day injured list. Right forearm tightness.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Ben Joyce,,,P,Shoulder,10-Day IL,2026-03-23,TBD,"Los Angeles Angels placed RHP Ben Joyce on the 15-day injured list retroactive to March 22, 2026. Right shoulder inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Grayson Rodriguez,,,P,Shoulder,10-Day IL,2026-03-23,TBD,"Los Angeles Angels placed RHP Grayson Rodriguez on the 15-day injured list retroactive to March 22, 2026. Right shoulder inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Alek Manoah,,,P,Finger,10-Day IL,2026-03-23,TBD,"Los Angeles Angels placed RHP Alek Manoah on the 15-day injured list retroactive to March 22, 2026. Right middle finger contusion.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Ryan Johnson,,,P,Undisclosed,10-Day IL,2026-04-06,TBD,"Los Angeles Angels placed RHP Ryan Johnson on the 15-day injured list retroactive to April 3, 2026. Viral infection.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Yusei Kikuchi,,,P,Shoulder,10-Day IL,2026-05-03,TBD,"Los Angeles Angels placed LHP Yusei Kikuchi on the 15-day injured list retroactive to April 30, 2026. Left shoulder inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Drew Pomeranz,,,P,Elbow,10-Day IL,2026-05-13,TBD,Los Angeles Angels placed LHP Drew Pomeranz on the 15-day injured list. Left elbow inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jack Kochanowicz,,,P,Elbow,10-Day IL,2026-06-07,TBD,Los Angeles Angels placed RHP Jack Kochanowicz on the 15-day injured list. Right elbow inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Beck Way,,,P,Back,10-Day IL,2026-07-28,TBD,Kansas City Royals placed RHP Beck Way on the 15-day injured list. Low back spasms/tightness.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Stephen Kolek,,,P,Undisclosed,10-Day IL,2026-07-19,TBD,Kansas City Royals placed RHP Stephen Kolek on the 15-day injured list. Right flexor strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Hayden Wesneski,,,P,Undisclosed,10-Day IL,2026-07-29,TBD,Houston Astros activated RHP Hayden Wesneski from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Steven Okert,,,P,Hamstring,10-Day IL,2026-09-04,TBD,"Houston Astros placed LHP Steven Okert on the 15-day injured list retroactive to September 1, 2026. Right hamstring strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Mike Burrows,,,P,Undisclosed,10-Day IL,2026-09-06,TBD,Houston Astros placed RHP Mike Burrows on the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Carlos Estévez,,,P,Undisclosed,10-Day IL,2026-04-01,TBD,"Kansas City Royals placed RHP Carlos Estévez on the 15-day injured list retroactive to March 29, 2026. Left foot contusion.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Bailey Falter,,,P,Elbow,10-Day IL,2026-04-03,TBD,"Kansas City Royals placed LHP Bailey Falter on the 15-day injured list retroactive to April 2, 2026. Left elbow inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Cole Ragans,,,P,Elbow,10-Day IL,2026-05-08,TBD,"Kansas City Royals placed LHP Cole Ragans on the 15-day injured list retroactive to May 7, 2026. Left elbow impingement.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Matt Strahm,,,P,Knee,10-Day IL,2026-05-16,TBD,Kansas City Royals placed LHP Matt Strahm on the 15-day injured list. Right knee inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Nick Mears,,,P,Shoulder,10-Day IL,2026-05-29,TBD,"Kansas City Royals placed RHP Nick Mears on the 15-day injured list retroactive to May 28, 2026. Right shoulder impingement.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Seth Lugo,,,P,Undisclosed,10-Day IL,2026-06-12,TBD,"Kansas City Royals placed RHP Seth Lugo on the 7-day injured list retroactive to June 11, 2026. Concussion.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Kris Bubic,,,P,Elbow,10-Day IL,2026-07-01,TBD,Kansas City Royals placed LHP Kris Bubic on the 60-day injured list. Left elbow soreness.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Sam Bachman,,,P,Forearm,10-Day IL,2026-08-05,TBD,"Los Angeles Angels placed RHP Sam Bachman on the 15-day injured list retroactive to August 3, 2026. Right forearm radial nerve inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Shaun Anderson,,,P,Shoulder,10-Day IL,2026-08-10,TBD,Los Angeles Angels placed RHP Shaun Anderson on the 15-day injured list. Right shoulder inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Samy Natera,Jr.,,P,Back,10-Day IL,2026-08-20,TBD,"Los Angeles Angels placed LHP Samy Natera Jr. on the 15-day injured list retroactive to August 17, 2026. Low back muscle spasms.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Landon Knack,,,P,Undisclosed,10-Day IL,2026-07-11,TBD,Los Angeles Dodgers activated RHP Landon Knack from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Edwin Díaz,,,P,Undisclosed,10-Day IL,2026-07-29,TBD,Los Angeles Dodgers activated RHP Edwin Díaz from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Brock Stewart,,,P,Shoulder,10-Day IL,2026-07-31,TBD,Los Angeles Dodgers placed RHP Brock Stewart on the 15-day injured list. Right shoulder discomfort.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Will Klein,,,P,Elbow,10-Day IL,2026-08-01,TBD,Los Angeles Dodgers placed RHP Will Klein on the 15-day injured list. Right elbow discomfort.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Blake Snell,,,P,Undisclosed,10-Day IL,2026-08-11,TBD,Los Angeles Dodgers activated LHP Blake Snell from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Blake Treinen,,,P,Elbow,10-Day IL,2026-08-11,TBD,Los Angeles Dodgers transferred RHP Blake Treinen from the 15-day injured list to the 60-day injured list. Right elbow inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Justin Wrobleski,,,P,Forearm,10-Day IL,2026-08-16,TBD,Los Angeles Dodgers placed LHP Justin Wrobleski on the 15-day injured list. Left forearm inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Evan Phillips,,,P,Undisclosed,10-Day IL,2026-07-06,TBD,Los Angeles Dodgers activated RHP Evan Phillips from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Tyler Glasnow,,,P,Undisclosed,10-Day IL,2026-08-25,TBD,Los Angeles Dodgers activated RHP Tyler Glasnow from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Eric Lauer,,,P,Elbow,10-Day IL,2026-09-02,TBD,Los Angeles Dodgers placed LHP Eric Lauer on the 15-day injured list. Left elbow inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Bobby Miller,,,P,Undisclosed,10-Day IL,2026-09-05,TBD,Los Angeles Dodgers activated RHP Bobby Miller from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Edgardo Henriquez,,,P,Back,10-Day IL,2026-09-14,TBD,Los Angeles Dodgers placed RHP Edgardo Henriquez on the 15-day injured list. Lower back discomfort.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Roki Sasaki,,,P,Finger,10-Day IL,2026-08-27,TBD,Los Angeles Dodgers placed RHP Roki Sasaki on the 15-day injured list. Right middle finger blister.,mlb_api,2026-09-16T01:36:46.527890+00:00
+George Klassen,,,P,Back,10-Day IL,2026-08-30,TBD,"Los Angeles Angels placed RHP George Klassen on the 15-day injured list retroactive to August 27, 2026. Left low back inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Ben Casparius,,,P,Shoulder,10-Day IL,2026-04-13,TBD,Los Angeles Dodgers placed RHP Ben Casparius on the 15-day injured list. Right shoulder inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jack Dreyer,,,P,Shoulder,10-Day IL,2026-05-17,TBD,Los Angeles Dodgers placed LHP Jack Dreyer on the 15-day injured list. Left shoulder discomfort.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Bennett Sousa,,,P,Undisclosed,10-Day IL,2026-07-20,TBD,Houston Astros activated LHP Bennett Sousa from the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Kai-Wei Teng,,,P,Undisclosed,10-Day IL,2026-07-17,TBD,Houston Astros activated RHP Kai-Wei Teng from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Tanner Gordon,,,P,Undisclosed,10-Day IL,2026-06-30,TBD,Colorado Rockies activated RHP Tanner Gordon from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Seth Halvorsen,,,P,Shoulder,10-Day IL,2026-07-04,TBD,"Colorado Rockies placed RHP Seth Halvorsen on the 15-day injured list retroactive to July 1, 2026. Right shoulder inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Tomoyuki Sugano,,,P,Back,10-Day IL,2026-07-04,TBD,"Colorado Rockies placed RHP Tomoyuki Sugano on the 15-day injured list retroactive to July 1, 2026. Back spasms.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Jeff Criswell,,,P,Shoulder,10-Day IL,2026-07-18,TBD,Colorado Rockies placed RHP Jeff Criswell on the 15-day injured list. Right shoulder strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Sean Sullivan,,,P,Undisclosed,10-Day IL,2026-08-03,TBD,"Colorado Rockies placed LHP Sean Sullivan on the 15-day injured list retroactive to July 5, 2026.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Blas Castaño,,,P,Undisclosed,10-Day IL,2026-08-08,TBD,Colorado Rockies activated RHP Blas Castaño from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jaden Hill,,,P,Undisclosed,10-Day IL,2026-08-19,TBD,Colorado Rockies activated RHP Jaden Hill from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Kyle Freeland,,,P,Undisclosed,10-Day IL,2026-08-24,TBD,"Colorado Rockies placed LHP Kyle Freeland on the 15-day injured list retroactive to August 21, 2026. Cervical radiculopathy.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Troy Melton,,,P,Undisclosed,10-Day IL,2026-03-10,TBD,Detroit Tigers placed RHP Troy Melton on the 60-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Beau Brieske,,,P,Undisclosed,10-Day IL,2026-03-23,TBD,Detroit Tigers placed RHP Beau Brieske on the 60-day injured list. Left adductor strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Justin Verlander,,,P,Hip,10-Day IL,2026-04-04,TBD,"Detroit Tigers placed RHP Justin Verlander on the 15-day injured list retroactive to April 1, 2026. Left hip inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Casey Mize,,,P,Undisclosed,10-Day IL,2026-04-29,TBD,Detroit Tigers placed RHP Casey Mize on the 15-day injured list. Right adductor strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Tarik Skubal,,,P,Elbow,10-Day IL,2026-05-04,TBD,"Detroit Tigers placed LHP Tarik Skubal on the 15-day injured list retroactive to May 1, 2026. Loose bodies in left elbow.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Jackson Jobe,,,P,Undisclosed,10-Day IL,2026-02-10,TBD,Detroit Tigers placed RHP Jackson Jobe on the 60-day injured list. Recovering from Tommy John surgery.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Will Vest,,,P,Undisclosed,10-Day IL,2026-05-17,TBD,Detroit Tigers activated RHP Will Vest from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Victor Vodnik,,,P,Undisclosed,10-Day IL,2026-06-15,TBD,Colorado Rockies activated RHP Victor Vodnik from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Slade Cecconi,,,P,Undisclosed,10-Day IL,2026-09-04,TBD,Cleveland Guardians activated RHP Slade Cecconi from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Colin Holderman,,,P,Wrist,10-Day IL,2026-09-04,TBD,Cleveland Guardians placed RHP Colin Holderman on the 15-day injured list. Right wrist inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jose Quintana,,,P,Hamstring,10-Day IL,2026-04-02,TBD,"Colorado Rockies placed LHP Jose Quintana on the 15-day injured list retroactive to March 30, 2026. Right hamstring strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Ryan Feltner,,,P,Undisclosed,10-Day IL,2026-04-24,TBD,Colorado Rockies placed RHP Ryan Feltner on the 15-day injured list. Right ulnar nerve inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jimmy Herget,,,P,Undisclosed,10-Day IL,2026-06-17,TBD,Colorado Rockies activated RHP Jimmy Herget from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Welinton Herrera,,,P,Elbow,10-Day IL,2026-05-30,TBD,Colorado Rockies placed LHP Welinton Herrera on the 15-day injured list. Left elbow inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Chase Dollander,,,P,Elbow,10-Day IL,2026-06-12,TBD,Colorado Rockies transferred RHP Chase Dollander from the 15-day injured list to the 60-day injured list. Right elbow strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Ty Madden,,,P,Forearm,10-Day IL,2026-05-17,TBD,"Detroit Tigers placed RHP Ty Madden on the 15-day injured list retroactive to May 16, 2026. Right forearm contusion.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Burch Smith,,,P,Shoulder,10-Day IL,2026-05-22,TBD,Detroit Tigers placed RHP Burch Smith on the 15-day injured list. Right shoulder inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Brant Hurter,,,P,Undisclosed,10-Day IL,2026-05-24,TBD,"Detroit Tigers placed LHP Brant Hurter on the 15-day injured list retroactive to May 23, 2026. Lumbar spine inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Enyel De Los Santos,,,P,Undisclosed,10-Day IL,2026-04-06,TBD,Houston Astros activated RHP Enyel De Los Santos from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Cristian Javier,,,P,Shoulder,10-Day IL,2026-04-09,TBD,Houston Astros placed RHP Cristian Javier on the 15-day injured list. Grade two right shoulder strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Ronel Blanco,,,P,Elbow,10-Day IL,2026-04-10,TBD,Houston Astros transferred RHP Ronel Blanco from the 15-day injured list to the 60-day injured list. Right elbow surgery recovery.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Tatsuya Imai,,,P,Undisclosed,10-Day IL,2026-04-13,TBD,"Houston Astros placed RHP Tatsuya Imai on the 15-day injured list retroactive to April 12, 2026. Right arm fatigue.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Cody Bolton,,,P,Undisclosed,10-Day IL,2026-04-15,TBD,"Houston Astros placed RHP Cody Bolton on the 15-day injured list retroactive to April 13, 2026.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Josh Hader,,,P,Biceps,10-Day IL,2026-04-17,TBD,Houston Astros transferred LHP Josh Hader from the 15-day injured list to the 60-day injured list. Left biceps tendinitis.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Hunter Brown,,,P,Shoulder,10-Day IL,2026-04-05,TBD,"Houston Astros placed RHP Hunter Brown on the 15-day injured list retroactive to April 2, 2026. Right shoulder strain.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Nate Pearson,,,P,Undisclosed,10-Day IL,2026-05-19,TBD,Houston Astros activated RHP Nate Pearson from the 15-day injured list.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Lance Mccullers,Jr.,,P,Shoulder,10-Day IL,2026-05-19,TBD,"Houston Astros placed RHP Lance McCullers Jr. on the 15-day injured list retroactive to May 16, 2026. Right shoulder inflammation.",mlb_api,2026-09-16T01:36:46.527890+00:00
+Kenley Jansen,,,P,Undisclosed,10-Day IL,2026-05-28,TBD,Detroit Tigers placed RHP Kenley Jansen on the 15-day injured list. Pelvic inflammation.,mlb_api,2026-09-16T01:36:46.527890+00:00
+Jack Flaherty,,,P,Undisclosed,10-Day IL,2026-06-13,TBD,Detroit Tigers placed RHP Jack Flaherty on the 15-day injured list. Left peroneal strain.,mlb_api,2026-09-16T01:36:46.527890+00:00
