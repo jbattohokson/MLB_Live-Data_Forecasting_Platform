@@ -120,7 +120,7 @@ Verified by actually running the code, 3x each for reliability, not just read th
 
 Not testable in this pass, and not faked:
 
-- `migrate_to_duckdb.py` needs `data/Pitchers_Stats.csv` and `data/Batters_Stats.csv`, which aren't present in this copy of the repo (likely excluded from the working folder or never committed). The existing `mlb_analytics.duckdb` already has `raw_pitchers`/`raw_batters` built from a prior run, which is what let the dbt layer above get tested — but the migration script's CSV-loading SQL itself was reviewed, not executed. Add the two CSVs back to `data/` and re-run `migrate_to_duckdb.py` to confirm it end-to-end.
+- `migrate_to_duckdb.py` reads `data/Pitchers_Stats.csv` (606 rows) and `data/Batters_Stats.csv` (1,520 rows). Both were restored on 2026-10-26 from the `raw_pitchers`/`raw_batters` tables of the last full build; re-running the migration on them reproduces every source column exactly, and `dbt build` passes 16/16.
 - The live Streamlit *chat loop* (`MLB_Live_Agent.py`'s Claude conversation handling) requires `ANTHROPIC_API_KEY` and a running Streamlit session — neither is available in this environment, so that specific wiring (tool-call dispatch, chart rendering into the Streamlit UI) is read-reviewed but not exercised end-to-end.
 
 However, all seven tool functions in `agent_tools.py` themselves — the actual logic Claude would call — were run directly against live data (not mocked), 3x each. This surfaced and fixed five real, reproducible bugs:
