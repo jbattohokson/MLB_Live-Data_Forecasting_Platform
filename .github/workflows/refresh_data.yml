@@ -1,8 +1,8 @@
 name: Weekly MLB Data Refresh
 
+# Manual only until data/Pitchers_Stats.csv and data/Batters_Stats.csv are committed.
+# The weekly schedule was removed because the run fails without those seed files.
 on:
-  schedule:
-    - cron: "0 6 * * 0"
   workflow_dispatch:
 
 jobs:
@@ -24,6 +24,12 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Check seed CSVs are present
+        run: |
+          for f in data/Pitchers_Stats.csv data/Batters_Stats.csv; do
+            if [ ! -f "$f" ]; then echo "::error::Missing $f. Commit the seed CSVs before running this workflow."; exit 1; fi
+          done
 
       - name: Seed DuckDB from CSVs
         run: python migrate_to_duckdb.py

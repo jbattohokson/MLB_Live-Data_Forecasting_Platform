@@ -8,7 +8,7 @@ A Streamlit app where a coach or analyst asks pitching questions in plain Englis
 
 - **`MLB_Live_Agent.py`** — Streamlit entry point: page layout, sidebar controls, chat UI, and the agent loop (send question, parse Claude's tool calls, dispatch them, render results).
 - **`agent_tools.py`** — the seven tools Claude can call: live Statcast pitch metrics, IL stints, velocity trends, schedules, semantic search over pitcher profiles (ChromaDB), a Ridge regression model predicting ERA/xwOBA from Statcast features, and pitch-location heatmap data.
-- **`pipeline/`** — the live data refresh pipeline (`run_pipeline.py` orchestrates `fetch_statcast.py`, `fetch_injuries.py`, `combine.py`), with offseason guards and staleness TTLs so it doesn't re-fetch unnecessarily. Runs on a schedule via `.github/workflows/refresh_data.yml`.
+- **`pipeline/`** — the live data refresh pipeline (`run_pipeline.py` orchestrates `fetch_statcast.py`, `fetch_injuries.py`, `combine.py`), with offseason guards and staleness TTLs so it doesn't re-fetch unnecessarily. Run it locally with `python pipeline/run_pipeline.py`. The GitHub Actions workflow (`.github/workflows/refresh_data.yml`) is a separate manual job that seeds DuckDB from the season CSVs and runs the dbt build and tests.
 - **`migrate_to_duckdb.py`** + **`dbt/`** — the historical analytics layer: seeds DuckDB from season-level stats CSVs, then dbt staging and mart models compute FIP proxies, whiff tiers, and normalized contact-quality scores. This layer is separate from the live agent loop, which queries pybaseball/MLB Stats API directly at question time.
 
 See [`PROJECT_STRUCTURE.md`](PROJECT_STRUCTURE.md) for a file-by-file breakdown, plus a full record of what was tested and fixed on 2026-09-16.
